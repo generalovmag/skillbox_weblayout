@@ -77,10 +77,13 @@ p {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 30px 0;
 }
 
 .container-header {
+  margin-top: 30px;
+}
+
+.container-header .container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -133,13 +136,19 @@ p {
 }
 
 .navigation {
-  padding: 14px 45px;
   margin-bottom: 70px;
-  border-radius: 13px;
-  background-color: #fff;
+}
+
+.navigation .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 14px 45px;
+  border-radius: 13px;
+  box-sizing: border-box;
+
+  background-color: #fff;
 }
 
 .nav {
@@ -259,7 +268,7 @@ p {
   font-size: 60px;
   line-height: 60px;
 }
-.about-us {
+.about-us-description {
   width: 76%;
 }
 
@@ -289,6 +298,10 @@ p {
   background-color: #fff;
 }
 
+.service-item-header {
+  font-weight: 500;
+}
+
 .services-item-link {
   position: relative;
   font-size: 20px;
@@ -311,14 +324,45 @@ p {
 
 .advantages-item {
   width: 23.5%;
-  background-color: #fff;
-  padding: 40px 42px 41px 45px;
+  padding: 116px 42px 41px 45px;
   border-radius: 20px;
   box-sizing: border-box;
 }
 
 .advantages-item:nth-child(n-4) {
   margin-bottom: 23px;
+}
+
+.advantages-item-1 {
+  background: #fff url("/img/advantages-1.png") no-repeat 46px 37px;
+}
+
+.advantages-item-2 {
+  background: #fff url("/img/advantages-2.png") no-repeat 46px 37px;
+}
+
+.advantages-item-3 {
+  background: #fff url("/img/advantages-3.png") no-repeat 46px 37px;
+}
+
+.advantages-item-4 {
+  background: #fff url("/img/advantages-4.png") no-repeat 46px 37px;
+}
+
+.advantages-item-5 {
+  background: #fff url("/img/advantages-5.png") no-repeat 46px 37px;
+}
+
+.advantages-item-6 {
+  background: #fff url("/img/advantages-6.png") no-repeat 46px 37px;
+}
+
+.advantages-item-7 {
+  background: #fff url("/img/advantages-7.png") no-repeat 46px 37px;
+}
+
+.advantages-item-8 {
+  background: #fff url("/img/advantages-8.png") no-repeat 46px 37px;
 }
 
 .placement-header {
@@ -355,9 +399,17 @@ p {
   justify-content: space-between;
 }
 
+.placement-hotel-name {
+  display: block;
+
+  font-weight: 400;
+  font-size: initial;
+}
+
 .placement-option-cost-particle {
   color: #999;
 }
+
 .placement-option-cost-number {
   font-weight: 700;
   font-size: 20px;
@@ -400,9 +452,11 @@ p {
   bottom: 7px;
 }
 
-.want-tour {
+.want-tour .container {
   padding: 40px;
   border-radius: 20px;
+
+  box-sizing: border-box;
 
   background-color: #e9e9e9;
 }
@@ -497,11 +551,14 @@ p {
   font-weight: 700;
 }
 
-.footer {
+.footer .container {
   display: flex;
   justify-content: space-between;
   position: relative;
+
   padding: 43px 52px;
+  box-sizing: border-box;
+
   background-color: #333;
   border-radius: 15px;
 
