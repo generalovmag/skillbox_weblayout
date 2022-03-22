@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "MullerRegular";
+  font-family: "Muller";
   src: local("Muller-Regular"),
     url("/fonts/MullerRegular.woff2") format("woff2"),
     url("/fonts/MullerRegular.woff") format("woff");
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "MullerMedium";
+  font-family: "Muller";
   src: local("Muller-Medium"), url("/fonts/MullerMedium.woff2") format("woff2"),
     url("/fonts/MullerMedium.woff") format("woff");
   font-display: swap;
@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: "MullerBold";
+  font-family: "Muller";
   src: local("Muller-Bold"), url("/fonts/MullerBold.woff2") format("woff2"),
     url("/fonts/MullerBold.woff") format("woff");
   font-display: swap;
@@ -216,13 +216,12 @@ p {
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
-  font-family: "MullerBold", sans-serif;
 }
 
 .special-offer-cost {
   margin-bottom: 47px;
 
-  font: 400 20px / 1.3 "MullerRegular";
+  font: 400 20px / 1.3 "Muller";
 }
 
 .special-offe-tour-detail {
@@ -495,17 +494,20 @@ p {
 }
 
 .want-tour-select {
+  appearance: none;
+  width: 10em;
   border: none;
 }
 
 .want-tour-input {
-  width: 8em;
+  width: 10em;
   border: none;
   border-bottom: 1px solid #cccccc;
 }
 
 .want-tour-date {
   border-bottom: none;
+  width: 9em;
 }
 
 .want-tour-date::-webkit-calendar-picker-indicator {
@@ -538,6 +540,7 @@ p {
   border-bottom: 1px solid #c4c4c4;
 }
 .contacts-item-header {
+  font-size: 20px;
   flex: 0 0 35%;
 }
 
