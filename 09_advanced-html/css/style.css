@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: "MullerRegular", sans-serif; /* для примера с фонт-фейсом */
+  font-family: "Muller", sans-serif; /* для примера с фонт-фейсом */
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
@@ -49,7 +49,8 @@ a {
 }
 
 ul,
-p {
+p,
+fieldset {
   padding: 0;
   margin: 0;
 }
@@ -463,9 +464,8 @@ p {
 .want-tour-form {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
-  padding: 31px 38px 31px 20px;
+  padding: 31px 28px 31px 20px;
 
   border-radius: 20px;
   background-color: #fff;
@@ -482,11 +482,12 @@ p {
   flex-direction: column;
   margin-right: 30px;
   border-right: 1px solid #e1e1e1;
-  padding-right: 22px;
+  padding-right: 20px;
 }
 
 .want-tour-option:last-child {
   margin-right: 0;
+  padding-right: 30px;
 }
 
 .want-tour-text {
@@ -495,19 +496,25 @@ p {
 
 .want-tour-select {
   appearance: none;
+  padding-right: 26px;
+
   width: 10em;
   border: none;
+
+  background-image: url("/img/arrow select.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 .want-tour-input {
-  width: 10em;
+  width: 7em;
   border: none;
   border-bottom: 1px solid #cccccc;
 }
 
 .want-tour-date {
   border-bottom: none;
-  width: 9em;
+  width:8em;
 }
 
 .want-tour-date::-webkit-calendar-picker-indicator {
@@ -516,7 +523,7 @@ p {
 
 .want-tour-btn {
   height: max-content;
-  margin: 0;
+  margin: 0 0 0 20px;
   padding: 13px 30px;
 }
 
