@@ -26,6 +26,12 @@
   font-style: normal;
 }
 
+:root {
+  --color-hover: #CC9933;
+  --color-active: #a47312;
+  --color-white: #fff;
+}
+
 body {
   font-family: "Muller", sans-serif; /* для примера с фонт-фейсом */
   font-style: normal;
@@ -103,7 +109,7 @@ p {
   margin-left: auto;
   border: 0;
   background-color: #e5e5e5;
-  color: #cc9933;
+  color: var(--color-hover);
   cursor: pointer;
 }
 
@@ -124,16 +130,16 @@ p {
 }
 
 .personal-account:active {
-  color: #a47312;
+  color: var(--color-active);
   transition: 0.3s;
   background-color: #e5e5e5;
 }
 
 .personal-account:active svg path {
-  color: #a47312;
+  color: var(--color-active);
   transition: 0.3s;
   background-color: #e5e5e5;
-  fill: #a47312;
+  fill: var(--color-active);
 }
 
 .navigation {
@@ -149,7 +155,7 @@ p {
   border-radius: 13px;
   box-sizing: border-box;
 
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .nav {
@@ -169,10 +175,10 @@ p {
 }
 .nav-btn {
   padding: 13px 20px;
-  border: 1px solid #cc9933;
+  border: 1px solid var(--color-hover);
   border-radius: 10px;
-  background-color: #fff;
-  color: #cc9933;
+  background-color: var(--color-white);
+  color: var(--color-hover);
   cursor: pointer;
 }
 
@@ -191,7 +197,7 @@ p {
   justify-content: space-between;
   align-items: stretch;
 
-  color: #fff;
+  color: var(--color-white);
 }
 
 .special-offer-tour-trip {
@@ -275,7 +281,6 @@ p {
 .services-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .services-item {
@@ -284,7 +289,11 @@ p {
   flex-wrap: wrap;
 }
 
-.services-item:not(:nth-child(n + 3)) {
+.services-item:nth-child(2n + 1) {
+  margin-right: 25px;
+}
+
+.services-item:nth-last-child(n + 3) {
   margin-bottom: 23px;
 }
 
@@ -295,7 +304,7 @@ p {
 .services-item-text {
   padding: 25px 100px 50px 45px;
   border-radius: 0 0 15px 15px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .service-item-header {
@@ -334,35 +343,35 @@ p {
 }
 
 .advantages-item-1 {
-  background: #fff url("/img/advantages-1.png") no-repeat 46px 37px;
+  background: var(--color-white) url("/img/advantages-1.png") no-repeat 46px 37px;
 }
 
 .advantages-item-2 {
-  background: #fff url("/img/advantages-2.png") no-repeat 46px 37px;
+  background: var(--color-white) url("/img/advantages-2.png") no-repeat 46px 37px;
 }
 
 .advantages-item-3 {
-  background: #fff url("/img/advantages-3.png") no-repeat 46px 37px;
+  background: var(--color-white) url("/img/advantages-3.png") no-repeat 46px 37px;
 }
 
 .advantages-item-4 {
-  background: #fff url("/img/advantages-4.png") no-repeat 46px 37px;
+  background: var(--color-white) url("/img/advantages-4.png") no-repeat 46px 37px;
 }
 
 .advantages-item-5 {
-  background: #fff url("/img/advantages-5.png") no-repeat 46px 37px;
+  background: var(--color-white) url("/img/advantages-5.png") no-repeat 46px 37px;
 }
 
 .advantages-item-6 {
-  background: #fff url("/img/advantages-6.png") no-repeat 46px 37px;
+  background: var(--color-white) url("/img/advantages-6.png") no-repeat 46px 37px;
 }
 
 .advantages-item-7 {
-  background: #fff url("/img/advantages-7.png") no-repeat 46px 37px;
+  background: var(--color-white) url("/img/advantages-7.png") no-repeat 46px 37px;
 }
 
 .advantages-item-8 {
-  background: #fff url("/img/advantages-8.png") no-repeat 46px 37px;
+  background: var(--color-white) url("/img/advantages-8.png") no-repeat 46px 37px;
 }
 
 .placement-header {
@@ -379,7 +388,7 @@ p {
 
   overflow: hidden;
 
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .placement-item:nth-child(-n + 6) {
@@ -390,7 +399,7 @@ p {
   display: flex;
   flex-direction: column;
   padding: 24px 46px 41px 45px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .placement-option-cost {
@@ -422,10 +431,10 @@ p {
 .placement-option-btn {
   width: 37.4%;
   padding: 5px;
-  color: #cc9933;
-  border: 1px solid #cc9933;
+  color: var(--color-hover);
+  border: 1px solid var(--color-hover);
   border-radius: 6px;
-  background-color: #fff;
+  background-color: var(--color-white);
   cursor: pointer;
 }
 .placement-item-see-options {
@@ -444,12 +453,23 @@ p {
   position: relative;
   font-weight: 500;
   font-size: 20px;
-  color: #fff;
+  color: var(--color-white);
+  cursor: pointer;
 }
 
-.placement-item-see-options a img {
+/* Не нашел варианта как позиционировать псевдоэлемент относительно .placement-item-see-options*/
+.placement-item-see-options a::after {
+  content: "";
   position: absolute;
-  bottom: 7px;
+  top: -371px;
+  right: -54px;
+  bottom: -40px;
+  left: -54px;
+}
+
+.placement-item-see-options a svg {
+  position: absolute;
+  bottom: 6px;
 }
 
 .want-tour .container {
@@ -468,7 +488,7 @@ p {
   padding: 31px 28px 31px 20px;
 
   border-radius: 20px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .want-tour-form fieldset {
@@ -531,7 +551,7 @@ p {
   display: flex;
   padding: 45px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 .contacts-adress {
   margin-right: 50px;
@@ -553,7 +573,7 @@ p {
 
 .contacts-item-number-link,
 .contacts-item-mail-link {
-  color: #cc9933;
+  color: var(--color-hover);
 }
 
 .conatacts-btn {
@@ -572,7 +592,7 @@ p {
   background-color: #333;
   border-radius: 15px;
 
-  color: #fff;
+  color: var(--color-white);
 }
 .footer-about {
   display: flex;
@@ -588,7 +608,7 @@ p {
   margin-bottom: 50px;
 }
 .footer-about-agreement {
-  color: #cc9933;
+  color: var(--color-hover);
 }
 .footer-contacts {
   display: flex;
@@ -600,7 +620,7 @@ p {
 }
 
 .footer-contacts-number {
-  color: #cc9933;
+  color: var(--color-hover);
 }
 
 .footer-contacts a:nth-child(3) {
@@ -608,7 +628,7 @@ p {
 }
 
 .footer-contacts-mail {
-  color: #cc9933;
+  color: var(--color-hover);
 }
 
 .footer-contacts-mail:hover {
@@ -631,20 +651,20 @@ p {
   bottom: 0;
 }
 
-.footer-social-contacts-hover-focus a:hover svg path {
-  transition: 0.3s;
-  fill: #cc9933;
-}
-
 .footer-social-contacts-hover-focus a:focus svg path {
   transition: 0.3s;
-  fill: #cc9933;
+  fill: var(--color-hover);
   outline: none;
+}
+
+.footer-social-contacts-hover-focus a:hover svg path {
+  transition: 0.3s;
+  fill: var(--color-hover);
 }
 
 .footer-social-contacts-active a:active svg path {
   transition: 0.3s;
-  fill: #a47312;
+  fill: var(--color-active);
   background-color: transparent;
 }
 
@@ -664,19 +684,19 @@ p {
 }
 
 .focus-outline:focus-within::before {
-  outline: 1px solid #cc9933;
+  outline: 1px solid var(--color-hover);
   outline-offset: 5px;
 }
 
 .text-hover:active {
-  color: #a47312;
+  color: var(--color-active);
   transition: 0.3s;
   background-color: transparent;
 }
 
 .text-hover:hover,
 :focus {
-  color: #cc9933;
+  color: var(--color-hover);
   transition: 0.3s;
   background-color: transparent;
 }
@@ -684,15 +704,15 @@ p {
 .btn-hover-focus:hover,
 :focus {
   transition: 0.3s;
-  background-color: #cc9933;
-  color: #fff;
+  background-color: var(--color-hover);
+  color: var(--color-white);
   outline: none;
 }
 
 .btn-hover-focus:active {
   transition: 0.3s;
-  background-color: #a47312;
-  color: #fff;
+  background-color: var(--color-active);
+  color: var(--color-white);
 }
 
 .text-link-rotate:hover svg {
@@ -701,12 +721,12 @@ p {
 }
 
 .special-offe-tour-detail:active {
-  color: #fff;
+  color: var(--color-white);
   background-color: transparent;
 }
 
 .special-offe-tour-detail:active svg path {
-  fill: #fff;
+  fill: var(--color-white);
   background-color: transparent;
 }
 
@@ -719,17 +739,17 @@ p {
 }
 
 .services-item-link:active {
-  color: #a47312;
+  color: var(--color-active);
   background-color: transparent;
 }
 
 .services-item-link:active svg path {
-  fill: #a47312;
+  fill: var(--color-active);
   background-color: transparent;
 }
 
 .contacts-item-mail-link:hover,
 .footer-contacts-mail:hover {
-  color: #e9c379;
+  color: #e9c479;
   transition: 0.3s;
 }
