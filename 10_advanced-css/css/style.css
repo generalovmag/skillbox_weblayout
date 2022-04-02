@@ -1,0 +1,755 @@
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+    url("/fonts/MullerRegular.woff2") format("woff2"),
+    url("/fonts/MullerRegular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Medium"), url("/fonts/MullerMedium.woff2") format("woff2"),
+    url("/fonts/MullerMedium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Bold"), url("/fonts/MullerBold.woff2") format("woff2"),
+    url("/fonts/MullerBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --color-hover: #CC9933;
+  --color-active: #a47312;
+  --color-white: #fff;
+}
+
+body {
+  font-family: "Muller", sans-serif; /* для примера с фонт-фейсом */
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2em;
+  background-color: #e5e5e5;
+  background-size: cover;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+p,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  margin: 0 0 20px 45px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #333;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container-header {
+  margin-top: 30px;
+}
+
+.container-header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-text {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: #666666;
+}
+
+.personal-account {
+  margin-left: auto;
+  border: 0;
+  background-color: #e5e5e5;
+  color: var(--color-hover);
+  cursor: pointer;
+}
+
+.personal-account:hover,
+:focus {
+  color: #e9c479;
+  transition: 0.3s;
+}
+
+.personal-account:focus svg path {
+  fill: #e9c479;
+  transition: 0.3s;
+}
+
+.personal-account:hover svg path {
+  fill: #e9c479;
+  transition: 0.3s;
+}
+
+.personal-account:active {
+  color: var(--color-active);
+  transition: 0.3s;
+  background-color: #e5e5e5;
+}
+
+.personal-account:active svg path {
+  color: var(--color-active);
+  transition: 0.3s;
+  background-color: #e5e5e5;
+  fill: var(--color-active);
+}
+
+.navigation {
+  margin-bottom: 70px;
+}
+
+.navigation .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 45px;
+  border-radius: 13px;
+  box-sizing: border-box;
+
+  background-color: var(--color-white);
+}
+
+.nav {
+  border-right: 1px solid #b3b3b3;
+  padding-right: 55px;
+}
+
+.nav-list {
+  display: flex;
+}
+.nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.nav-item-link {
+  color: #666666;
+}
+.nav-btn {
+  padding: 13px 20px;
+  border: 1px solid var(--color-hover);
+  border-radius: 10px;
+  background-color: var(--color-white);
+  color: var(--color-hover);
+  cursor: pointer;
+}
+
+.navigation-item-btn {
+  flex: 0 0 31%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.want-tour-btn {
+  margin-right: 40px;
+}
+
+.special-offer-tour {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  color: var(--color-white);
+}
+
+.special-offer-tour-trip {
+  flex: 0 0 52%;
+  margin-right: 20px;
+}
+.special-offer-tour-maldives {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+
+  background-image: url("/img/darken.png"), url("/img/special-offer-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.special-offer-tour-header {
+  margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.special-offer-cost {
+  margin-bottom: 47px;
+
+  font: 400 20px / 1.3 "Muller";
+}
+
+.special-offe-tour-detail {
+  display: block;
+  position: relative;
+  color: #ffcc66;
+}
+
+.img-svg {
+  position: absolute;
+  bottom: 6px;
+}
+
+.special-offer-tour-crete {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 40px;
+  border-radius: 18px;
+
+  background-image: url("/img/darken.png"), url("/img/special-offer-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.special-offer-tour-luxury-rooms {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-grow: 1;
+
+  padding: 40px;
+  border-radius: 16px;
+
+  background: transparent url("/img/special-offer-3.jpg") no-repeat 100%;
+  background-size: cover;
+}
+
+.luxury-roms {
+  font-size: 60px;
+  line-height: 60px;
+}
+.about-us-description {
+  width: 76%;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  width: 48.9%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-item:nth-child(2n + 1) {
+  margin-right: 25px;
+}
+
+.services-item:nth-last-child(n + 3) {
+  margin-bottom: 23px;
+}
+
+.services-item-img {
+  border-radius: 15px 15px 0 0;
+}
+
+.services-item-text {
+  padding: 25px 100px 50px 45px;
+  border-radius: 0 0 15px 15px;
+  background-color: var(--color-white);
+}
+
+.service-item-header {
+  font-weight: 500;
+}
+
+.services-item-link {
+  position: relative;
+  font-size: 20px;
+  color: #ffcc66;
+}
+
+.services-item-link .img-svg {
+  bottom: 1px;
+}
+
+.advantages-header {
+  margin-bottom: 30px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  width: 23.5%;
+  padding: 116px 42px 41px 45px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.advantages-item:nth-child(n-4) {
+  margin-bottom: 23px;
+}
+
+.advantages-item-1 {
+  background: var(--color-white) url("/img/advantages-1.png") no-repeat 46px 37px;
+}
+
+.advantages-item-2 {
+  background: var(--color-white) url("/img/advantages-2.png") no-repeat 46px 37px;
+}
+
+.advantages-item-3 {
+  background: var(--color-white) url("/img/advantages-3.png") no-repeat 46px 37px;
+}
+
+.advantages-item-4 {
+  background: var(--color-white) url("/img/advantages-4.png") no-repeat 46px 37px;
+}
+
+.advantages-item-5 {
+  background: var(--color-white) url("/img/advantages-5.png") no-repeat 46px 37px;
+}
+
+.advantages-item-6 {
+  background: var(--color-white) url("/img/advantages-6.png") no-repeat 46px 37px;
+}
+
+.advantages-item-7 {
+  background: var(--color-white) url("/img/advantages-7.png") no-repeat 46px 37px;
+}
+
+.advantages-item-8 {
+  background: var(--color-white) url("/img/advantages-8.png") no-repeat 46px 37px;
+}
+
+.placement-header {
+  margin-bottom: 30px;
+}
+.placement-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.placement-item {
+  width: 32%;
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  background-color: var(--color-white);
+}
+
+.placement-item:nth-child(-n + 6) {
+  margin-bottom: 23px;
+}
+
+.placement-item-text {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 46px 41px 45px;
+  background-color: var(--color-white);
+}
+
+.placement-option-cost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.placement-hotel-name {
+  display: block;
+
+  font-weight: 400;
+  font-size: initial;
+}
+
+.placement-option-cost-particle {
+  color: #999;
+}
+
+.placement-option-cost-number {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.placement-option-location {
+  margin-bottom: 20px;
+  color: #999;
+}
+.placement-option-btn {
+  width: 37.4%;
+  padding: 5px;
+  color: var(--color-hover);
+  border: 1px solid var(--color-hover);
+  border-radius: 6px;
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+.placement-item-see-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 54px 40px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-image: url("/img/all options.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.placement-item-see-options a {
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+/* Не нашел варианта как позиционировать псевдоэлемент относительно .placement-item-see-options*/
+.placement-item-see-options a::after {
+  content: "";
+  position: absolute;
+  top: -371px;
+  right: -54px;
+  bottom: -40px;
+  left: -54px;
+}
+
+.placement-item-see-options a svg {
+  position: absolute;
+  bottom: 6px;
+}
+
+.want-tour .container {
+  padding: 40px;
+  border-radius: 20px;
+
+  box-sizing: border-box;
+
+  background-color: #e9e9e9;
+}
+
+.want-tour-form {
+  display: flex;
+  align-items: center;
+
+  padding: 31px 28px 31px 20px;
+
+  border-radius: 20px;
+  background-color: var(--color-white);
+}
+
+.want-tour-form fieldset {
+  display: flex;
+
+  border: none;
+}
+
+.want-tour-option {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  border-right: 1px solid #e1e1e1;
+  padding-right: 20px;
+}
+
+.want-tour-option:last-child {
+  margin-right: 0;
+  padding-right: 30px;
+}
+
+.want-tour-text {
+  font-size: 12px;
+}
+
+.want-tour-select {
+  appearance: none;
+  padding-right: 26px;
+
+  width: 10em;
+  border: none;
+
+  background-image: url("/img/arrow select.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.want-tour-input {
+  width: 7em;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+.want-tour-date {
+  border-bottom: none;
+  width:8em;
+}
+
+.want-tour-date::-webkit-calendar-picker-indicator {
+  margin-left: -20px;
+}
+
+.want-tour-btn {
+  height: max-content;
+  margin: 0 0 0 20px;
+  padding: 13px 30px;
+}
+
+.contacts-container {
+  display: flex;
+  padding: 45px;
+  border-radius: 15px;
+  background-color: var(--color-white);
+}
+.contacts-adress {
+  margin-right: 50px;
+}
+.contacts-list {
+  margin-bottom: 45px;
+}
+.contants-item {
+  display: flex;
+
+  padding-bottom: 23px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.contacts-item-header {
+  font-size: 20px;
+  flex: 0 0 35%;
+}
+
+.contacts-item-number-link,
+.contacts-item-mail-link {
+  color: var(--color-hover);
+}
+
+.conatacts-btn {
+  padding: 27px 29px;
+  font-weight: 700;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  padding: 43px 52px;
+  box-sizing: border-box;
+
+  background-color: #333;
+  border-radius: 15px;
+
+  color: var(--color-white);
+}
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 30%;
+  /* margin-right: 100px; */
+}
+.footer-about-company {
+  margin-bottom: 20px;
+}
+.footer-about-website {
+  margin-bottom: 50px;
+}
+.footer-about-agreement {
+  color: var(--color-hover);
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-address {
+  margin-bottom: 15px;
+}
+
+.footer-contacts-number {
+  color: var(--color-hover);
+}
+
+.footer-contacts a:nth-child(3) {
+  margin-bottom: 15px;
+}
+
+.footer-contacts-mail {
+  color: var(--color-hover);
+}
+
+.footer-contacts-mail:hover {
+  animation: color-service-item-link linear 0.3s forwards;
+}
+
+.footer-social-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-social-contacts a:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-logo {
+  position: absolute;
+  right: 175px;
+  bottom: 0;
+}
+
+.footer-social-contacts-hover-focus a:focus svg path {
+  transition: 0.3s;
+  fill: var(--color-hover);
+  outline: none;
+}
+
+.footer-social-contacts-hover-focus a:hover svg path {
+  transition: 0.3s;
+  fill: var(--color-hover);
+}
+
+.footer-social-contacts-active a:active svg path {
+  transition: 0.3s;
+  fill: var(--color-active);
+  background-color: transparent;
+}
+
+.focus-outline {
+  position: relative;
+}
+
+.focus-outline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.focus-outline:focus-within::before {
+  outline: 1px solid var(--color-hover);
+  outline-offset: 5px;
+}
+
+.text-hover:active {
+  color: var(--color-active);
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.text-hover:hover,
+:focus {
+  color: var(--color-hover);
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.btn-hover-focus:hover,
+:focus {
+  transition: 0.3s;
+  background-color: var(--color-hover);
+  color: var(--color-white);
+  outline: none;
+}
+
+.btn-hover-focus:active {
+  transition: 0.3s;
+  background-color: var(--color-active);
+  color: var(--color-white);
+}
+
+.text-link-rotate:hover svg {
+  padding-left: 10px;
+  transition: 0.3s;
+}
+
+.special-offe-tour-detail:active {
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+.special-offe-tour-detail:active svg path {
+  fill: var(--color-white);
+  background-color: transparent;
+}
+
+.services-item-link:hover {
+  color: #e9c479;
+}
+
+.services-item-link:hover svg path {
+  fill: #e9c479;
+}
+
+.services-item-link:active {
+  color: var(--color-active);
+  background-color: transparent;
+}
+
+.services-item-link:active svg path {
+  fill: var(--color-active);
+  background-color: transparent;
+}
+
+.contacts-item-mail-link:hover,
+.footer-contacts-mail:hover {
+  color: #e9c479;
+  transition: 0.3s;
+}
