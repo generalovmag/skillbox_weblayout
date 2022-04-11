@@ -87,14 +87,15 @@ body {
 }
 
 .container {
-    width: 1770px;
+    max-width: 1770px;
     margin: 0 auto;
 }
 
 
 /* Не пойму как сделать тень наезжающую на main */
 .header {
-    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 50%);
+    
 }
 
 .header .container {
@@ -103,22 +104,22 @@ body {
 }
 
 .header__nav {
-    flex-basis: 51%;
+    max-width: 817px;
+    width: 100%;
     justify-content: space-around;
 
     padding: 15px 0;
 }
 
 .header__nav-list {
-    justify-content: flex-end;
-    flex: 1 1 100%;
     align-self: center;
-
+    
+    margin-right: 85px;
 }
 
-.header__nav-item {
+.header__nav-item:not(:last-child) {
     /* flex: 1 1 100%; */
-    margin-right: 9.8%;
+    margin-right: 85px;
 }
 
 .header__link {
@@ -220,8 +221,7 @@ body {
 
     padding: 50px 50px 48px 50px;
     
-    background-color: #000;
-    opacity: 50%;
+    background-color: rgb(0 0 0 / 50%);
 
     color: var(--color-white);
     font-weight: 700;
@@ -433,6 +433,7 @@ body {
 
 .footer__logo {
     margin-bottom: 20px;
+    outline: none;
 }
 
 .footer__item:last-child {
@@ -444,6 +445,10 @@ body {
 
     font-size: 18px;
     line-height: 2;
+}
+
+.footer__social-contacts a {
+    outline: none;
 }
 
 .footer__social-contacts a:not(:last-child) {
@@ -471,12 +476,14 @@ body {
     width: 100%;
 
     background-color: #414141;
+    border: none;
 
     transition: background-color .3s ease-in-out;
 }
 
 .footer__fieldset textarea {
     margin-bottom: 30px;
+    resize: none;
 }
 
 .footer__fieldset input:not(:last-child){
@@ -652,7 +659,8 @@ body {
         outline: none;
     }
 
-    .questions__button:hover {
+    .questions__button:hover,
+    .questions__button:focus-visible {
         color: var(--color-orange);
         border-color: var(--color-orange);
         z-index: 1;
@@ -674,6 +682,10 @@ body {
 
     .footer__svg:hover path {
         fill: var(--color-orange);
+    }
+
+    .footer__social-contacts a:focus-visible {
+        outline-color: var(--color-orange);
     }
 
     .footer__svg:active path {
@@ -746,6 +758,8 @@ body {
     transition-property: color, border-color;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
+
+    outline: none;
 }
 
 .questions__svg ellipse,
@@ -759,4 +773,11 @@ body {
 
 .footer__svg path {
     transition: fill .3s ease-in-out;
+}
+
+.footer__social-contacts a {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+
+    transition: outline-color .3s ease-in-out;
 }
