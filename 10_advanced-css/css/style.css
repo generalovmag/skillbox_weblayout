@@ -438,19 +438,19 @@ p {
   cursor: pointer;
 }
 .placement-item-see-options {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 54px 40px;
   box-sizing: border-box;
   border-radius: 15px;
-  background-image: url("/img/all options.jpg");
+  background-image: url("/img/all_options.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .placement-item-see-options a {
-  position: relative;
   font-weight: 500;
   font-size: 20px;
   color: var(--color-white);
@@ -461,15 +461,15 @@ p {
 .placement-item-see-options a::after {
   content: "";
   position: absolute;
-  top: -371px;
-  right: -54px;
-  bottom: -40px;
-  left: -54px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .placement-item-see-options a svg {
   position: absolute;
-  bottom: 6px;
+  bottom: 46px;
 }
 
 .want-tour .container {
@@ -521,7 +521,7 @@ p {
   width: 10em;
   border: none;
 
-  background-image: url("/img/arrow select.png");
+  background-image: url("/img/arrow_select.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
@@ -694,15 +694,26 @@ p {
   background-color: transparent;
 }
 
-.text-hover:hover,
-:focus {
+.text-hover:focus {
   color: var(--color-hover);
   transition: 0.3s;
   background-color: transparent;
 }
 
-.btn-hover-focus:hover,
-:focus {
+.text-hover:hover {
+  color: var(--color-hover);
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.btn-hover-focus:focus {
+  transition: 0.3s;
+  background-color: var(--color-hover);
+  color: var(--color-white);
+  outline: none;
+}
+
+.btn-hover-focus:hover {
   transition: 0.3s;
   background-color: var(--color-hover);
   color: var(--color-white);
