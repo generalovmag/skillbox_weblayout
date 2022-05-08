@@ -1,50 +1,58 @@
+/* Разрешение 1520 px */
+@media (max-width: 1520px) {
+  .about-us__item {
+    background-position: 6.5% 50%;
+    background-size: 25%;
+  }
+}
+
 /* Разрешение меньше 1200 пикселей */
 
 @media (max-width: 1200px) {
   .footer {
     padding: 4.86% 4.8%;
   }
-  
+
   .footer__logo {
     margin-bottom: 5%;
   }
-  
+
   .footer__social-contacts a:not(:last-child) {
     margin-right: 6.6%;
   }
-  
+
   .footer__center {
     width: 58.5%;
     margin-right: 0;
   }
-  
+
   .footer__fieldset > input {
     padding: 3.9% 4.3%;
   }
-  
+
   .footer__fieldset textarea {
     padding: 3.9% 4.2%;
     margin-bottom: 5.7%;
   }
-  
+
   .footer__button {
     padding: 3.7%;
     margin-right: 4%;
     width: calc((100% - 60px) / 2);
   }
-  
+
   .form__checkbox input[type="checkbox"] + label {
     display: inline-flex;
     align-items: center;
   }
-  
+
   .form__checkbox input[type="checkbox"] + label::before {
     padding-top: 1px;
     width: 11px;
     height: 11px;
     margin-right: 4px;
   }
-  
+
   .footer__right {
     display: none;
   }
@@ -53,7 +61,6 @@
 /* Разрешение меньше 1024 пикселей */
 
 @media (max-width: 1024px) {
-
   .header {
     padding: 0 50px;
   }
@@ -98,12 +105,11 @@
     font-size: 60px;
     font-weight: 800;
     margin-bottom: 2.4%;
-    
   }
   .calculation__discription {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 7.5%;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 7.5%;
   }
 
   .calculation__button {
@@ -189,7 +195,8 @@
     margin-bottom: 2.6%;
   }
 
-  .how-work__more-btn, .calculation__button {
+  .how-work__more-btn,
+  .calculation__button {
     margin-right: 3%;
   }
 
@@ -217,9 +224,7 @@
   }
 }
 
-
 /* Разрешение меньше 768 пикселей */
-
 
 @media (max-width: 768px) {
   .header .container {
@@ -306,7 +311,7 @@
   }
 
   .how-work__step:not(:last-child) {
-    margin-right: 23.26%;
+    margin-right: 23%;
   }
 
   .how-work__consultation {
@@ -327,7 +332,8 @@
     margin-bottom: 3.6%;
   }
 
-  .how-work__more-btn, .calculation__button {
+  .how-work__more-btn,
+  .calculation__button {
     margin-right: 4.3%;
   }
 
@@ -402,9 +408,80 @@
   }
 }
 
+/* Разрешение 680 px */
+@media (max-width: 680px) {
+  .how-work__consultation::before {
+    max-height: 254px;
+  }
+}
+
+/* Разрешение 600 px */
+@media (max-width: 600px) {
+  .calculation__header {
+    font-size: 36px;
+  }
+
+  .calculation__discription {
+    font-size: 16px;
+  }
+
+  .calculation__button {
+    font-size: 18px;
+  }
+
+  .how-work__step:not(:last-child) {
+    margin-right: 20%;
+  }
+
+  .how-work__consultation::before {
+    max-height: 220px;
+  }
+}
+
+/* Разрешение 550 px */
+@media (max-width: 550px) {
+  .how-work__consultation::before {
+    max-height: 200px;
+  }
+}
+
+
+/* Разрешение меньше 450xp */
+@media (max-width: 500px) {
+  .calculation__header {
+    font-size: 32px;
+  }
+  
+  .calculation__button {
+    padding: 0.6em 0.8em;
+
+    font-size: 16px;
+  }
+
+  .about-us__header {
+    font-size: 40px;
+  }
+
+  .how-work__header {
+    font-size: 40px;
+  }
+
+  .questions__header {
+    font-size: 40px;
+  }
+
+  .footer__heder {
+    font-size: 40px;
+  }
+
+  .how-work__consultation::before {
+    max-height: 165px;
+  }
+}
+
 /* Разрешение меньше 320px */
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   body {
     font-size: 14px;
   }
@@ -416,7 +493,7 @@
   .header .container {
     padding: 4.6% 0;
   }
-  
+
   .calculation {
     padding: 0 4.7%;
   }
@@ -428,7 +505,6 @@
   .calculation__container {
     padding: 20.8% 8.3% 21%;
     text-align: center;
-
   }
 
   .calculation__header {
@@ -451,16 +527,242 @@
   }
 
   .about-us {
-    padding: 19.9% 4.5% 5.5%;
+    padding: 19.5% 4.5% 14.2%;
   }
 
   .about-us__header {
     font-size: 24px;
-    margin-bottom: 7.1%;
+    margin-bottom: 6.9%;
   }
 
   .about-us__discription {
     margin-bottom: 4.8%;
   }
 
+  .about-us__left {
+    min-height: auto;
+    background-image: url("/img/Rectangle-2.jpeg");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .about-us__left-more {
+    display: flex;
+    flex-direction: column;
+
+    padding: 70.7% 0 0 0;
+
+    color: #333;
+    background-color: rgb(0 0 0 / 0%);
+  }
+
+  .about-us__left-discription {
+    width: 100%;
+    margin-bottom: 4%;
+    font-weight: 400;
+  }
+
+  .about-us__button {
+    padding: 3.85% 14.6%;
+    align-self: flex-start;
+
+    border: 2px solid #ff9900;
+    color: #ff9900;
+    font-size: 12px;
+  }
+
+  .about-us__item {
+    padding: 27.2% 0 0 0;
+    border: none;
+    line-height: 2;
+    background-size: 22.3%;
+    background-position: 0 8.1%;
+  }
+
+  .about-us__item:not(:last-child) {
+    margin-bottom: 5%;
+  }
+
+  .about-us__item-1 {
+    background-image: url(/img/Frame-39.svg);
+  }
+
+  .about-us__item-2 {
+    background-image: url(/img/Frame-38.svg);
+  }
+
+  .about-us__item-header {
+    margin-bottom: 1%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    width: 100%;
+  }
+
+  .about-us__item-discription {
+    width: 100%;
+
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .how-work {
+    padding: 5.3% 4.4% 5.5%;
+  }
+
+  .how-work__header {
+    margin-bottom: 7.6%;
+
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .how-work__step:not(:last-child) {
+    margin-right: 15.36%;
+  }
+
+  .how-work__step {
+    font-size: 14px;
+  }
+
+  .how-work__consultation {
+    padding-top: 62.1%;
+  }
+
+  .how-work__consultation::before {
+    top: 0;
+    width: 100%;
+    max-height: 160px;
+  }
+
+  .how-work__consultation-header {
+    margin-bottom: 4.8%;
+
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .how-work__consultation-discription {
+    margin-bottom: 5.3%;
+  }
+
+  .how-work__more-btn {
+    margin-right: 2.1%;
+    padding: 1.1em 3.7em;
+
+    font-size: 12px;
+  }
+
+  .how-work__contract-btn {
+    padding: 1em 2.55em;
+
+    font-size: 12px;
+  }
+
+  .questions {
+    padding: 10.9% 4.6% 19%;
+  }
+
+  .questions__header {
+    margin-bottom: 6.2%;
+
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .questions__button {
+    align-items: center;
+    padding: 10.46% 0 9.7%;
+  }
+
+  .questions__discription {
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 83%;
+    line-height: 1.75;
+  }
+
+  .questions__svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer {
+    padding: 10.6% 4.5%;
+  }
+
+  .footer .container {
+    justify-content: flex-start;
+  }
+
+  .footer__center {
+    order: 1;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5.9%;
+  }
+
+  .footer__heder {
+    margin-bottom: 7%;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .footer__fieldset input:not(:last-child) {
+    margin-bottom: 8.7%;
+  }
+
+  .footer__fieldset > input {
+    padding: 7.5% 7%;
+  }
+
+  .footer__fieldset textarea {
+    padding: 7.2% 7.2% 11%;
+    margin-bottom: 8.8%;
+  }
+
+  .form__checkbox {
+    flex-wrap: wrap;
+    padding-bottom: 8.2%;
+    border-bottom: 1px solid #cacaca;
+  }
+
+  .footer__button {
+    padding: 4.6% 9.6%;
+    margin: 0 auto 6%;
+    width: auto;
+    font-size: 12px;
+  }
+
+  .form__checkbox input[type="checkbox"] + label {
+    margin: 0 auto;
+    align-items: center;
+    letter-spacing: 1.2px;
+  }
+
+  .footer__left {
+    order: 2;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer__logo {
+    margin: 0 auto;
+    margin-bottom: 4%;
+  }
+
+  .footer__social-contacts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer__social-contacts a:not(:last-child) {
+    margin-right: 5.2%;
+  }
 }
