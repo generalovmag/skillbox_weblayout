@@ -110,8 +110,86 @@ body {
     display: none;
 }
 
+
+/* Выпадающее бургер меню */
+.stop-scroll {
+    overflow: hidden;
+}
+
 .header__burger-list {
-    display: none;
+    z-index: 20;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    padding: 165px 50px 60px;
+
+    visibility: hidden;
+    transform: translateX(-120%);
+    overflow-y: auto;
+
+    width: 41%;
+    min-width: 280px;
+    height: 100vh;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #888;
+
+    transition: visibility 0.25s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.header__burger-item
+.header__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.header__burger-list-active {
+    visibility: visible;
+    transform: none;
+}
+
+.header__burger-item:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.header__burger-btn-active {
+    z-index: 25;
+}
+
+.header__burger-btn-active::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+
+.header__burger-btn-active
+.header__burger-btn-span {
+    top: 10px;
+    left: -2px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.header__burger-btn-active
+.header__burger-btn-span::before {
+    top: 0%;
+    transform: rotate(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.header__burger-btn-active
+.header__burger-btn-span::after {
+    top: 0;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
 .header__burger-btn {
@@ -179,24 +257,152 @@ body {
     font-weight: 600;
     color: #333;
 }
-.header__search {
+
+
+/* Поиск */
+
+.header__search-container {
+    position: relative;
     align-self: center;
+}
+
+.header__search {
     border: none;
     background-color: var(--color-white);
     cursor: pointer;
 }
+
+.header__search-container-active {
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    padding: 16px 13px 16px 32px;
+
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #333;
+
+    overflow: hidden;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+    transition-property: top, left, padding, width, height;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.header__search-container-active form {
+    display: flex;
+    align-items: center;
+}
+
+.header__search-text {
+    padding: 10px 0;
+    width: 412px;
+
+    margin-right: 14px;
+
+    border: none;
+    border-bottom: 1px solid #DCDCDC;
+    outline: none;
+}
+
+.header__search-text::-webkit-input-placeholder { 
+    color: #DCDCDC; 
+}
+
+.header__search-active {
+    margin-right: 22px;
+    border: none;
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+.header__search-active svg rect {
+    fill: var(--color-orange);
+}
+
+.header__search-active svg path {
+    stroke: var(--color-orange);
+}
+
+.header__search-close {
+    border: none;
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+.header__search--active {
+    top:-20px;
+    left: -505px;
+    width: 540px;
+    padding: 16px 13px 16px 32px;
+    height: auto;
+}
+
+/* Секция Калькуляция */
 
 .calculation {
     padding: 0 3% 2.4%;
 }
 
 .calculation .container {
-    background-image: url("/img/low-angle-photo-of-balconies-2462015.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
 }
 
+/* Свайпер */
+
+.swiper-container {
+    position: absolute;
+    min-height: inherit;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+}
+
+.swiper-slide {
+    background-image: url("/img/slide-3.jpeg");
+}
+
+.swiper-slide:nth-child(2) {
+    background-image: url("/img/slide-1.jpeg");
+}
+
+.swiper-slide:nth-child(3) {
+    background-image: url("/img/slide-2.jpeg");
+}
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 27px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+/* Не пойму почему не работает z-index у контейнера */
 .calculation__container {
+    /* z-index: 10;  */
     flex-direction: column;
 
     max-width: 55%;
@@ -204,7 +410,10 @@ body {
 
     color: var(--color-white);
 }
+
 .calculation__header {
+    z-index: 10;
+
     font-size: 70px;
     font-weight: 800;
     margin-bottom: 2.7%;
@@ -212,11 +421,15 @@ body {
     
 }
 .calculation__discription {
+    z-index: 10;
+
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 10.2%;
 }
 .calculation__button {
+    z-index: 10;
+
     max-width: 31.5%;
     padding: 1.1em 1em;
     
@@ -230,7 +443,7 @@ body {
 
 }
 .about-us {
-    padding: 2.71% 3%;
+    padding: 2.51% 3%;
 }
 
 .about-us .container {
@@ -342,7 +555,7 @@ body {
 }
 
 .how-work {
-    padding: 2.6% 3% 0;
+    padding: 1.9% 3% 0;
 }
 
 .how-work__container {
@@ -350,7 +563,7 @@ body {
 }
 
 .how-work__header {
-    margin-bottom: 2.7%;
+    margin-bottom: 3.1%;
 
     font-size: 48px;
     font-weight: 400;
@@ -376,10 +589,19 @@ body {
     background-color: transparent;
 }
 
+.how-work__step-active {
+    color: #E1670E;
+}
+
 .how-work__consultation {
+    display: none;
     position: relative;
     flex-direction: column;
     padding-bottom: 3%;
+}
+
+.how-work__consultation-active {
+    display: block;
 }
 
 .how-work__consultation::before {
@@ -391,9 +613,26 @@ body {
 
     width: 49%;
 
-    background-image: url("/img/Rectangle-18.jpeg");
     background-size: cover;
     background-position: center;
+}
+
+/* Нет понимания как сделать!!! */
+
+.how-work__consultation::before {
+    background-image: url('/img/Rectangle-18.jpeg');
+}
+
+.how-work__consultation:nth-child(2)::before {
+    background-image: url('/img/Rectangle-18-2.jpeg');
+}
+
+.how-work__consultation:nth-child(3)::before {
+    background-image: url('/img/Rectangle-18-3.jpeg');
+}
+
+.how-work__consultation:nth-child(4)::before {
+    background-image: url('/img/Rectangle-18-4.jpeg');
 }
 
 .how-work__consultation-header {
@@ -444,7 +683,40 @@ body {
     font-weight: 400;
 }
 
-.questions__button {
+/* Аккордион */
+
+.ac .ac-trigger::after {
+    display: none;
+}
+
+.ac {
+    border: none;
+    margin-top: 0;
+}
+
+.accordion-container .ac .ac-trigger {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #333333;
+}
+
+.ac-panel {
+    max-width: 1000px;
+}
+
+.ac .ac-panel .ac-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+.questions__button,
+.accordion-container .ac .ac-trigger {
     position: relative;
     width: 100%;
     padding: 1.67% 0;
@@ -457,6 +729,11 @@ body {
 
     cursor: pointer;
 }
+
+.is-active .ac-header .ac-trigger .questions__svg {
+    transform: rotate(45deg);
+}
+
 .questions__discription {
     align-self: center;
     margin-right: auto;
@@ -479,8 +756,6 @@ body {
 
 .footer .container {
     justify-content: space-between;
-
-
 }
 
 .footer__left {
@@ -718,7 +993,8 @@ body {
     }
 
     .questions__button:hover,
-    .questions__button:focus-visible {
+    .questions__button:focus-visible,
+    .ac .ac-trigger:focus {
         color: var(--color-orange);
         border-color: var(--color-orange);
         z-index: 1;
