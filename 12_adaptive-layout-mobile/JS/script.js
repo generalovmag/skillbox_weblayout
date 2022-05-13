@@ -86,6 +86,7 @@ searchBtnActive.addEventListener('click',
 });
 
 searchBtnClose.addEventListener('click', 
-  function(){
+  function(e){
+    e.preventDefault();
     searchContainer.classList.remove('header__search--active');
   });
