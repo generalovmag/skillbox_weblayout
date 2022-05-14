@@ -243,9 +243,9 @@
   .header__search--active {
     border-radius: 10px;
     top: -9px;
-    left: -365px;
+    left: -488px;
     padding: 5px 13px;
-    width: 400px;
+    width: 522px;
   }
 
   .header__search-text {
@@ -430,6 +430,14 @@
 
 /* Разрешение 600 px */
 @media (max-width: 600px) {
+  .header__search--active {
+    border-radius: 10px;
+    top: -6px;
+    left: -397px;
+    padding: 2px 12px;
+    width: 432px;
+  }
+
   .calculation__header {
     font-size: 36px;
   }
@@ -463,11 +471,12 @@
 @media (max-width: 500px) {
   .header__search--active {
     border-radius: 10px;
-    top: -2px;
-    left: -224px;
+    top: -4px;
+    left: -273px;
     padding: 0px 10px;
-    width: 260px;
-  }
+    width: 305px;
+}
+
   .calculation__header {
     font-size: 32px;
   }
