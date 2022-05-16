@@ -22,7 +22,7 @@
   <header class="header">
     <div class="container flex">
       <nav class="header__burger">
-        <button class="header__burger-btn">
+        <button aria-label="раскрывающееся меню навигации" class="header__burger-btn">
           <span class="header__burger-btn-span"></span>
         </button>
         <ul class="header__burger-list flex">
@@ -43,7 +43,7 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="header__logo">
+      <a aria-label="логотип компании" href="#" class="header__logo">
         <picture>
           <source srcset="/img/logo-header-320.png" media="(max-width: 585px)" />
           <source srcset="/img/logo-header-1024.png" media="(max-width: 1024px)" />
@@ -70,7 +70,7 @@
         </ul>
       </nav>
       <div class="header__search-container">
-        <button class="header__search">
+        <button aria-label="раскрывающийся поиск по сайту" class="header__search">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="7.56126" height="1.89031"
               transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333" />
@@ -81,8 +81,8 @@
         </button>
         <div class="header__search-container-active">
           <form>
-            <input type="search" class="header__search-text" placeholder="Что будем искать?">
-            <button class="header__search-active">
+            <input aria-label="поле ввода вопроса" type="search" class="header__search-text" placeholder="Что будем искать?">
+            <button aria-label="поиска по сайту" class="header__search-active">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)"
                   fill="#333333" />
@@ -91,7 +91,7 @@
                   stroke="#333333" stroke-width="2" />
               </svg>
             </button>
-            <button class="header__search-close">
+            <button aria-label="закрыть поле поиска по сайту" class="header__search-close">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
                   fill="#999999" />
@@ -199,10 +199,10 @@
           <h2 class="how-work__header">Как мы работаем</h2>
           <!-- Переключение ТАБЫ кнопки -->
           <div class="how-work__steps flex">
-            <button class="how-work__step how-work__step-active link__effects" data-path="one">1 шаг</button>
-            <button class="how-work__step link__effects" data-path="two">2 шаг</button>
-            <button class="how-work__step link__effects" data-path="three">3 шаг</button>
-            <button class="how-work__step link__effects" data-path="four">4 шаг</button>
+            <button aria-label="Показать первый шаг нашей работы" class="how-work__step how-work__step-active link__effects" data-path="one">1 шаг</button>
+            <button aria-label="Показать второй шаг нашей работы" class="how-work__step link__effects" data-path="two">2 шаг</button>
+            <button aria-label="Показать третий шаг нашей работы" class="how-work__step link__effects" data-path="three">3 шаг</button>
+            <button aria-label="Показать четвертый шаг нашей работы" class="how-work__step link__effects" data-path="four">4 шаг</button>
           </div>
           <!-- Переключение ТАБЫ содержимое -->
           <!-- 1 блок -->
@@ -427,7 +427,7 @@
           </ul>
         </nav>
         <div class="footer__social-contacts">
-          <a href="#" class="footer__facebook">
+          <a aria-label="Мы в facebook" href="#" class="footer__facebook">
             <svg class="footer__svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -435,7 +435,7 @@
                 fill="#7C7C7C" />
             </svg>
           </a>
-          <a href="#" class="footer__vk">
+          <a aria-label="Мы в вконтакте" href="#" class="footer__vk">
             <svg class="footer__svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -443,7 +443,7 @@
                 fill="#7C7C7C" />
             </svg>
           </a>
-          <a href="#" class="footer__instagram">
+          <a aria-label="Мы в instagramm" href="#" class="footer__instagram">
             <svg class="footer__svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path

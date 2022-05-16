@@ -292,6 +292,21 @@ body {
     color: #333;
 }
 
+.header__link:hover:not(:focus-visible)::before {
+    transform: scale(1);
+}
+
+.header__link:focus-visible {
+    outline-color: var(--color-orange);
+}
+
+.header__link:active {
+    color: #E1670E;
+}
+
+.header__link:active:not(:focus-visible)::before {
+    background-color: #E1670E;
+}
 
 /* Поиск */
 
@@ -928,22 +943,6 @@ body {
 /* Visual effects */
 
 @media (min-width: 1024px) {
-    .header__link:hover:not(:focus-visible)::before {
-        transform: scale(1);
-    }
-
-    .header__link:focus-visible {
-        outline-color: var(--color-orange);
-    }
-
-    .header__link:active {
-        color: #E1670E;
-    }
-
-    .header__link:active:not(:focus-visible)::before {
-        background-color: #E1670E;
-    }
-
     .header__search:hover:not(:focus-visible) svg rect,
     .header__search-close:hover:not(:focus-visible) svg rect {
         fill: var(--color-orange);
