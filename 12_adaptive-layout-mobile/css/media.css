@@ -523,6 +523,10 @@
     padding: 4.6% 0;
   }
 
+  .header__link {
+    font-size: 18px;
+  }
+
   .calculation {
     padding: 0 4.7%;
   }
@@ -710,6 +714,14 @@
     font-weight: 500;
     max-width: 83%;
     line-height: 1.75;
+  }
+
+  .questions__button, .accordion-container .ac .ac-trigger {
+    padding: 9.97% 0;
+  }
+
+  .ac .ac-panel .ac-text {
+    font-size: 14px;
   }
 
   .questions__svg {
