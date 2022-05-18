@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Montserrat";
     src: local("Montserrat-Regular"),
-        url("/fonts/Montserrat-Regular.woff2") format("woff2"),
-        url("/fonts/Montserrat-Regular.woff") format("woff");
+        url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff");
     font-display: swap;
     font-weight: 400;
     font-style: normal;
@@ -11,8 +11,8 @@
 @font-face {
     font-family: "Montserrat";
     src: local("Montserrat-Medium"), 
-    url("/fonts/Montserrat-Medium.woff2") format("woff2"),
-    url("/fonts/Montserrat-Medium.woff") format("woff");
+    url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
     font-display: swap;
     font-weight: 500;
     font-style: normal;
@@ -21,8 +21,8 @@
 @font-face {
     font-family: "Montserrat";
     src: local("Montserrat-SemiBold"), 
-    url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("/fonts/Montserrat-SemiBold.woff") format("woff");
+    url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
     font-display: swap;
     font-weight: 600;
     font-style: normal;
@@ -31,8 +31,8 @@
 @font-face {
     font-family: "Montserrat";
     src: local("Montserrat-Bold"), 
-    url("/fonts/Montserrat-Bold.woff2") format("woff2"),
-    url("/fonts/Montserrat-Bold.woff") format("woff");
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
     font-display: swap;
     font-weight: 700;
     font-style: normal;
@@ -41,8 +41,8 @@
 @font-face {
     font-family: "Montserrat";
     src: local("Montserrat-ExtraBold"), 
-    url("/fonts/Montserrat-ExtraBold.woff2") format("woff2"),
-    url("/fonts/Montserrat-ExtraBold.woff") format("woff");
+    url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-ExtraBold.woff") format("woff");
     font-display: swap;
     font-weight: 800;
     font-style: normal;
@@ -421,15 +421,15 @@ body {
 }
 
 .swiper-slide {
-    background-image: url("/img/slide-3.jpeg");
+    background-image: url("../img/slide-3.jpeg");
 }
 
 .swiper-slide:nth-child(2) {
-    background-image: url("/img/slide-1.jpeg");
+    background-image: url("../img/slide-1.jpeg");
 }
 
 .swiper-slide:nth-child(3) {
-    background-image: url("/img/slide-2.jpeg");
+    background-image: url("../img/slide-2.jpeg");
 }
 
 .swiper-pagination-bullet {
@@ -525,7 +525,7 @@ body {
     width: calc((100% - 32px) / 2);
     min-height: 620px;
 
-    background-image: url("/img/Rectangle-2.jpeg");
+    background-image: url("../img/Rectangle-2.jpeg");
     background-size: cover;
     background-position: 30%;
 }
@@ -584,11 +584,11 @@ body {
 }
 
 .about-us__item-1 {
-    background-image: url("/img/Frame-16.png");
+    background-image: url("../img/Frame-16.png");
 }
 
 .about-us__item-2 {
-    background-image: url("/img/Frame-12.png");
+    background-image: url("../img/Frame-12.png");
 }
 
 .about-us__item-header {
@@ -666,22 +666,22 @@ body {
     background-position: center;
 }
 
-/* Нет понимания как сделать!!! */
+/* Картинки консультация */
 
 .how-work__consultation[data-target="one"]::before {
-    background-image: url('/img/Rectangle-18.jpeg');
+    background-image: url('../img/Rectangle-18.jpeg');
 }
 
 .how-work__consultation[data-target="two"]::before {
-    background-image: url('/img/Rectangle-18-2.jpeg');
+    background-image: url('../img/Rectangle-18-2.jpeg');
 }
 
 .how-work__consultation[data-target="three"]::before {
-    background-image: url('/img/Rectangle-18-3.jpeg');
+    background-image: url('../img/Rectangle-18-3.jpeg');
 }
 
 .how-work__consultation[data-target="four"]::before {
-    background-image: url('/img/Rectangle-18-4.jpeg');
+    background-image: url('../img/Rectangle-18-4.jpeg');
 }
 
 .how-work__consultation-header {
@@ -881,7 +881,8 @@ body {
     font-weight: 400;
 }
 
-.footer__fieldset > input{
+.footer__fieldset > input,
+.footer__fieldset textarea {
     color: var(--color-white);
 }
 
@@ -913,7 +914,7 @@ body {
 }
 
 .form__checkbox input[type="checkbox"]:checked + label::before {
-    background-image: url("/img/checkbox.svg");
+    background-image: url("../img/checkbox.svg");
     background-position: center;
     background-repeat: no-repeat;
 }

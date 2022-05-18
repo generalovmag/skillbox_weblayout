@@ -75,7 +75,7 @@
   }
 
   .header__logo {
-    width: fit-content;
+    width: auto;
   }
 
   .header__nav {
@@ -91,7 +91,7 @@
   }
 
   .calculation .container {
-    background-image: url("/img/low-angle-photo-of-balconies-1024.jpeg");
+    background-image: url("../img/low-angle-photo-of-balconies-1024.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -137,7 +137,7 @@
   .about-us__left {
     width: 100%;
     min-height: 640px;
-    background-image: url(/img/Rectangle-2.jpeg);
+    background-image: url(../img/Rectangle-2.jpeg);
     background-size: cover;
     margin-bottom: 3.4%;
   }
@@ -523,12 +523,16 @@
     padding: 4.6% 0;
   }
 
+  .header__link {
+    font-size: 18px;
+  }
+
   .calculation {
     padding: 0 4.7%;
   }
 
   .calculation .container {
-    background-image: url(/img/low-angle-photo-of-balconies-2462015-320px.jpeg);
+    background-image: url(../img/low-angle-photo-of-balconies-2462015-320px.jpeg);
   }
 
   .calculation__container {
@@ -570,7 +574,7 @@
 
   .about-us__left {
     min-height: auto;
-    background-image: url("/img/Rectangle-2.jpeg");
+    background-image: url("../img/Rectangle-2.jpeg");
     background-size: 100% 50%;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -614,11 +618,11 @@
   }
 
   .about-us__item-1 {
-    background-image: url(/img/Frame-39.svg);
+    background-image: url(../img/Frame-39.svg);
   }
 
   .about-us__item-2 {
-    background-image: url(/img/Frame-38.svg);
+    background-image: url(../img/Frame-38.svg);
   }
 
   .about-us__item-header {
@@ -710,6 +714,14 @@
     font-weight: 500;
     max-width: 83%;
     line-height: 1.75;
+  }
+
+  .questions__button, .accordion-container .ac .ac-trigger {
+    padding: 9.97% 0;
+  }
+
+  .ac .ac-panel .ac-text {
+    font-size: 14px;
   }
 
   .questions__svg {
