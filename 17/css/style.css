@@ -1,0 +1,311 @@
+body {
+  background-color: #424242;
+  padding: 70px;
+  font-family: 'Open Sans';
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  color: #fff;
+}
+
+.custom-elements__container {
+  display: flex;
+  min-width: 2678px;
+}
+
+/* чекбокс */
+
+.checkbox__container {
+  flex-shrink: 0;
+  display: inline-block;
+  padding: 25px 30px 30px;
+  margin-right: 58px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.checkbox__header {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.checkbox__label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+}
+
+.checkbox__label:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.checkbox__label input {
+  display: none;
+}
+
+.checkbox__label p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.checkbox__label span {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999999;
+  border-radius: 20%;
+  transition: border-color .2s ease-in-out;
+}
+
+.checkbox__label span:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 9px;
+  height: 9px;
+  opacity: 0;
+  background-image: url(/img/Rectangle99.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity .2s ease-in-out;
+}
+
+.checkbox__input:checked ~ span:before {
+  opacity: 1;
+}
+
+.checkbox__input:checked ~ span {
+  border-color: #CCB26E;
+}
+
+/* селект */
+
+.select__container {
+  margin-right: 58px;
+  flex-shrink: 0;
+  width: 176px;
+}
+
+.choices {
+
+}
+
+.choices__inner {
+  padding: 0;
+  min-height: auto;
+  align-self: center;
+
+  border: 1px solid #CCB26E;
+  border-radius: 10px;
+
+  font-size: 14px;
+  color: #333;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 0;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+.choices.is-open,
+.is-open .choices__inner {
+  border: 1px solid #CCB26E;
+  border-radius: 10px;
+}
+
+.choices__list--single {
+  padding: 10px 65px 10px 15px;
+}
+
+.choices[data-type*=select-one] .choices__input {
+  display: none;
+}
+
+.choices[data-type*=select-one]::after {
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  border-style: none;
+  background-image: url("/img/Rectangle141.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transition: transform, margin-top;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+
+}
+
+.choices[data-type*=select-one].is-open::after {
+  margin-top: -7px;
+
+  transform: rotateX(180deg);
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  border: 1px solid #CCB26E;
+  border-radius: 10px;
+
+
+  transition: visibility .3s ease-in-out;
+}
+
+/* Map */
+
+.map__container {
+  margin-right: 58px;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+/* Scroll */
+
+.scroll__container {
+  margin-right: 58px;
+
+}
+
+.scroll__text {
+  padding: 20px 30px;
+  background-color: #fff;
+
+  width: 399px;
+  height: 310px;
+
+  font-size: 14px;
+  line-height: 2;
+}
+
+[data-simplebar] {
+  overflow: auto;
+}
+
+.simplebar-scrollbar::before {
+  background-color: #CCB26E;
+}
+
+/* Form */
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  margin-right: 50px;
+  width: 440px;
+  padding: 38px 30px;
+  border-radius: 10px;
+
+  background-color: rgba(40, 40, 40, 0.4);
+
+  font-family: 'Roboto';
+}
+
+.form__container input {
+  padding: 24px 20px;
+  width: 90.5%;
+  margin-bottom: 31px;
+
+  border: 1px solid #FF5C00;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form__btn {
+  padding: 17px 53px;
+  cursor: pointer;
+
+  background: #FF5C00;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Tooltip */
+
+.tooltip__container {
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+.tooltip__section {
+  padding: 20px 80px 20px 30px;
+
+  max-width: 375px;
+
+  background-color: #fff;
+
+  font-size: 14px;
+  line-height: 2;
+}
+
+.tooltip__section:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.tooltip__text {
+  width: 90%;
+}
+
+.marker {
+  position: relative;
+}
+
+.marker svg:hover path,
+.marker svg:focus path {
+  fill: #CCB26E;
+}
+
+.marker svg:hover ~ .pop-up,
+.marker svg:focus ~ .pop-up {
+  visibility: visible;
+}
+
+.pop-up {
+  visibility: hidden;
+  position: absolute;
+  content: '';
+  top: -200%;
+  left: -21.8%;
+  padding: 9px 15px 9px 15px;
+  background-color: #424242;
+  transition: visibility .3s ease-in-out;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12px;}
+
+.pop-up::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  left: 50%;
+  bottom: -20%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #424242;
+}
