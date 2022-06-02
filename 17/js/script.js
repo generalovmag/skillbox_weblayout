@@ -1,8 +1,13 @@
 // Connection Selector
 
-const element = document.querySelector('#select');
+const element = document.querySelector(".choices")
+
 const choices = new Choices(element, {
-  searchEnable: false
+  searchEnabled: false,
+  shouldSort: false,
+  classNames: {
+    containerOuter: 'choices header_choices',
+  },
 });
 
 // Yandex map
@@ -32,30 +37,54 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
 };
 
+// SimpleBar
+
+document.querySelectorAll(".scroll__text").forEach(dropdown => {
+  new SimpleBar(dropdown, {
+    /* чтобы изначально ползунок был виден */
+    autoHide: false,
+    /* с помощью этого значения вы можете управлять высотой ползунка*/
+    scrollbarMaxSize: 25,
+  });
+})
+
 // Form
 
-var selector = document.getElementById("input[type='tel']");
-var im = new Inputmask("+7-(999)-999-99-99");
+var selector = document.querySelector("input[type='tel']");
+var im = new Inputmask("+7-(999) 999-99-99");
 
 im.mask(selector);
 
 new JustValidate('.form', {
+  colorWrong: '#FF5C00',
+  errorFieldCssClass: 'is-invalid',
+
   rules: {
     name: {
       required: true,
-      minLength: 2,
-      maxLength: 30,
+      minLength: 3,
+      maxLength: 30
     },
-    tel: {
+    phone: {
       required: true,
-      function(name, value) {
-        const phone = selector.inputmusk.unmaskedvalue()
-        return Number(phone) && phone.length === 10
+      function: (name, value) => {
+        const tel = selector.inputmusk.unmaskedvalue()
+        return Number(tel) && phone.length === 10;
       }
     },
-    mail: {
+    email: {
       required: true,
       email: true
+    }
+  },
+  messages: {
+    name: "Вы не ввели имя",
+    email: {
+      required: "Вы не ввели e-mail"
     },
+    phone: {
+      required: "Вы не ввели телефон",
+      function: "Не достаточное количество символов"
+    }
   }
 });

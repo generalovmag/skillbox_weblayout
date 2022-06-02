@@ -1,6 +1,6 @@
 body {
   background-color: #424242;
-  padding: 70px;
+  padding: 62px 85px;
   font-family: 'Open Sans';
 }
 
@@ -31,14 +31,15 @@ h1 {
 .checkbox__container {
   flex-shrink: 0;
   display: inline-block;
-  padding: 25px 30px 30px;
+  padding: 22px 35px 30px 30px;
   margin-right: 58px;
+  height: fit-content;
   border-radius: 10px;
   background-color: #fff;
 }
 .checkbox__header {
-  margin-bottom: 25px;
-  font-size: 18px;
+  margin-bottom: 22px;
+  font-size: 19.4px;
   font-weight: 600;
 }
 
@@ -49,15 +50,22 @@ h1 {
 }
 
 .checkbox__label:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .checkbox__label input {
-  display: none;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  bottom: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .checkbox__label p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -66,25 +74,23 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   border: 1px solid #999999;
   border-radius: 20%;
-  transition: border-color .2s ease-in-out;
 }
 
 .checkbox__label span:before {
   content: '';
   position: absolute;
-  top: 4px;
-  left: 3px;
+  top: 3px;
+  left: 2px;
   width: 9px;
   height: 9px;
   opacity: 0;
   background-image: url(/img/Rectangle99.png);
   background-repeat: no-repeat;
   background-size: contain;
-  transition: opacity .2s ease-in-out;
 }
 
 .checkbox__input:checked ~ span:before {
@@ -95,6 +101,11 @@ h1 {
   border-color: #CCB26E;
 }
 
+.checkbox__input:focus ~ .custom__checkbox,
+.checkbox__input:hover ~ .custom__checkbox {
+  border-color:#FF5C00;
+}
+
 /* селект */
 
 .select__container {
@@ -103,71 +114,100 @@ h1 {
   width: 176px;
 }
 
-.choices {
-
+.choices__list--single .choices__item {
+  color: #000;
+  opacity: 1;
 }
 
-.choices__inner {
-  padding: 0;
-  min-height: auto;
-  align-self: center;
+.header_choices.choices[data-type*=select-one]:after {
+  width: 13px;
+  height: 13px;
+  top: 14px;
+  right: 19px;
+  transform: translateX(50%);
+  border-radius: 100%;
+  border: 0;
+  background-image: url(/img/Rectangle141.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform .1s ease-in-out;
+  z-index: 5;
+}
 
-  border: 1px solid #CCB26E;
-  border-radius: 10px;
-
-  font-size: 14px;
-  color: #333;
+.header_choices.choices[data-type*=select-one].is-open:after {
+  transform: rotate(180deg) translate(-50%, 2px);
+  margin-top: 0;
 }
 
 .choices[data-type*=select-one] .choices__inner {
-  padding-bottom: 0;
+  padding-bottom: 5.5px;
+}
+
+.choises .choices__list.choices__list--dropdown.choices__placeholder {
+  display: none;
 }
 
 .choices__placeholder {
   opacity: 1;
 }
 
-.choices.is-open,
-.is-open .choices__inner {
-  border: 1px solid #CCB26E;
-  border-radius: 10px;
-}
-
-.choices__list--single {
-  padding: 10px 65px 10px 15px;
-}
-
-.choices[data-type*=select-one] .choices__input {
+.choices__list--dropdown .choices__item--selectable.is-highlighted::after, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted::after {
   display: none;
 }
 
-.choices[data-type*=select-one]::after {
-  margin-top: -4px;
-  width: 8px;
-  height: 8px;
-  border-style: none;
-  background-image: url("/img/Rectangle141.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  transition: transform, margin-top;
-  transition-duration: .3s;
-  transition-timing-function: ease-in-out;
-
+.header_choices .choices__inner {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 4.5px 10.5px 5.5px;
+  border: 1px solid #ddd;
+  border-radius: 2.5px;
+  min-height: 38px;
+  font-size: 16px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.choices[data-type*=select-one].is-open::after {
-  margin-top: -7px;
-
-  transform: rotateX(180deg);
+.header_choices {
+  max-width: 400px;
 }
 
-.choices__list--dropdown, .choices__list[aria-expanded] {
-  border: 1px solid #CCB26E;
+.header_choices .choices__list--dropdown {
+  top: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  z-index: 1;
   border-radius: 10px;
+  border: 1px solid #CCB26E;
+  box-sizing: border-box;
+}
 
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+  position: relative;
+  padding: 10px 15px 12px;
+  font-size: 14px;
+}
 
-  transition: visibility .3s ease-in-out;
+.header_choices .choices__inner {
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.header_choices.is-open .choices__inner {
+  border-radius: 10px;
+  
+  border: 1px solid #CCB26E;
+}
+
+.choices .choices__list .choices__item.is-selected {
+  display: none; 
+}
+
+.choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+  padding-right: 0;
 }
 
 /* Map */
@@ -191,11 +231,12 @@ h1 {
   padding: 20px 30px;
   background-color: #fff;
 
-  width: 399px;
-  height: 310px;
+  width: 340px;
+  height: 270px;
 
-  font-size: 14px;
-  line-height: 2;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Open Sans';
 }
 
 [data-simplebar] {
@@ -212,10 +253,9 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  flex-shrink: 0;
 
-  margin-right: 50px;
-  width: 440px;
+  margin-right: 57px;
+  width: 380px;
   padding: 38px 30px;
   border-radius: 10px;
 
@@ -225,8 +265,8 @@ h1 {
 }
 
 .form__container input {
-  padding: 24px 20px;
-  width: 90.5%;
+  padding: 20px 20px;
+  width: 89.3%;
   margin-bottom: 31px;
 
   border: 1px solid #FF5C00;
@@ -254,12 +294,13 @@ h1 {
 .tooltip__section {
   padding: 20px 80px 20px 30px;
 
-  max-width: 375px;
+  max-width: 265px;
 
   background-color: #fff;
 
-  font-size: 14px;
-  line-height: 2;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Open Sans';
 }
 
 .tooltip__section:not(:last-child) {
@@ -267,10 +308,12 @@ h1 {
 }
 
 .tooltip__text {
+  display: inline;
   width: 90%;
 }
 
 .marker {
+  display: inline;
   position: relative;
 }
 
@@ -288,9 +331,10 @@ h1 {
   visibility: hidden;
   position: absolute;
   content: '';
-  top: -200%;
-  left: -21.8%;
+  top: -324.2%;
+  left: -477.8%;
   padding: 9px 15px 9px 15px;
+  width: max-content;
   background-color: #424242;
   transition: visibility .3s ease-in-out;
   color: #fff;
