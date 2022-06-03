@@ -15,47 +15,47 @@
     <div class="custom-elements__container">
         <div class="checkbox__container">
             <h2 class="checkbox__header">Категории:</h2>
-            <label for="Dinosaurs" class="Dinosaurs flex checkbox__label">
-                <input type="checkbox" name="Dinosaurs" id="Dinosaurs" class="checkbox__input" checked>
+            <label class=" flex checkbox__label">
+                <input type="checkbox" name="Dinosaurs" class="checkbox__input" checked>
                 <p>Динозавры</p>
-                <span></span>
+                <span class="custom__checkbox"></span>
             </label>
-            <label for="Bears" class="Bears flex checkbox__label">
-                <input type="checkbox" name="Bears" id="Bears" class="checkbox__input">
+            <label class=" flex checkbox__label">
+                <input type="checkbox" name="Bears" class="checkbox__input">
                 <p>Медведи</p>
-                <span></span>
+                <span class="custom__checkbox"></span>
             </label>
-            <label for="Roe-deer" class="Roe-deer flex checkbox__label">
-                <input type="checkbox" name="Roe-deer" id="Roe-deer" class="checkbox__input">
+            <label class="flex checkbox__label">
+                <input type="checkbox" name="Roe-deer" class="checkbox__input">
                 <p>Косули</p>
-                <span></span>
+                <span class="custom__checkbox"></span>
             </label>
-            <label for="Foxes" class="Foxes flex checkbox__label">
-                <input type="checkbox" name="Foxes" id="Foxes" class="checkbox__input">
+            <label class="flex checkbox__label">
+                <input type="checkbox" name="Foxes" class="checkbox__input">
                 <p>Лисы</p>
-                <span></span>
+                <span class="custom__checkbox"></span>
             </label>
-            <label for="Wolves" class="Wolves flex checkbox__label">
-                <input type="checkbox" name="Wolves" id="Wolves" class="checkbox__input">
+            <label class="flex checkbox__label">
+                <input type="checkbox" name="Wolves" class="checkbox__input">
                 <p>Волки</p>
-                <span></span>
+                <span class="custom__checkbox"></span>
             </label>
-            <label for="Deer" class="Deer flex checkbox__label">
-                <input type="checkbox" name="Deer" id="Deer" class="checkbox__input">
+            <label class="flex checkbox__label">
+                <input type="checkbox" name="Deer" class="checkbox__input">
                 <p>Олени и лоси</p>
-                <span></span>
+                <span class="custom__checkbox"></span>
             </label>
         </div>
 
         <div class="select__container">
-            <select name="select" id="select" class="select">
+            <select name="choices" id="choices" class="choices">
                 <option value="">Материал</option>
-                <option value="">Древесина</option>
-                <option value="">Металл</option>
-                <option value="">Камень</option>
-                <option value="">Пластик</option>
-                <option value="">Композитный</option>
-                <option value="">Гипс</option>
+                <option >Древесина</option>
+                <option >Металл</option>
+                <option >Камень</option>
+                <option >Пластик</option>
+                <option >Композитный</option>
+                <option >Гипс</option>
             </select>
         </div>
 
@@ -74,18 +74,21 @@
         <div class="form__container">
             <form action="" class="form" id="form">
                 <input 
+                id="name"
                 name="Имя*" 
                 type="text"
                 placeholder="Имя*"
                 data-validate-field="name">
 
                 <input 
+                id="tel"
                 name="Телефон*" 
                 type="tel"
                 placeholder="Телефон*"
                 data-validate-field="phone">
 
                 <input 
+                id="email"
                 name="E-mail*" 
                 type="email"
                 placeholder="E-mail*"
@@ -98,7 +101,7 @@
         <div class="tooltip__container flex">
             <div class="tooltip__section">
                 <p class="tooltip__text">
-                    Следует отметить, что социально-экономическое&nbspразвитие способствует повышению качества переосмысления внешнеэкономических&nbspполитик.
+                    Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических&nbspполитик.
                     <div class="marker">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#BCBCBC"/>
@@ -111,8 +114,7 @@
             </div>
             <div class="tooltip__section">
                 <p class="tooltip__text">
-                    Следует отметить, что социально-экономическое&nbspразвитие способствует повышению качества переосмысления внешнеэкономических&nbspполитик.
-                    <div class="marker">
+                    Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических&nbspполитик.
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#BCBCBC"/>
                         </svg>
