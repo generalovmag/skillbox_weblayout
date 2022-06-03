@@ -73,26 +73,32 @@
 
         <div class="form__container">
             <form action="" class="form" id="form">
-                <input 
-                id="name"
-                name="Имя*" 
-                type="text"
-                placeholder="Имя*"
-                data-validate-field="name">
+                <div class="input__container flex">
+                    <input 
+                    id="name"
+                    name="Имя*" 
+                    type="text"
+                    placeholder="Имя*"
+                    data-validate-field="name">
+                </div>
 
-                <input 
-                id="tel"
-                name="Телефон*" 
-                type="tel"
-                placeholder="Телефон*"
-                data-validate-field="phone">
+                <div class="input__container flex">
+                    <input 
+                    id="tel"
+                    name="Телефон*" 
+                    type="tel"
+                    placeholder="Телефон*"
+                    data-validate-field="phone">
+                </div>
 
-                <input 
-                id="email"
-                name="E-mail*" 
-                type="email"
-                placeholder="E-mail*"
-                data-validate-field="email">
+                <div class="input__container flex">
+                    <input 
+                    id="email"
+                    name="E-mail*" 
+                    type="email"
+                    placeholder="E-mail*"
+                    data-validate-field="email">
+                </div>
 
                 <button class="form__btn">Заказать</button>
             </form>
@@ -128,7 +134,7 @@
         </div>
     </div>
     <script src="js/inputmask.min.js"></script>
-    <script src="js/just-validate.production.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
     <script src="js/choices.min.js"></script>
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
