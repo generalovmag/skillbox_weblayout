@@ -50,14 +50,13 @@ document.querySelectorAll(".scroll__text").forEach(dropdown => {
 
 // Form
 
-var selector = document.querySelector("input[type='tel']");
-var im = new Inputmask("+7-(999) 999-99-99");
+let selector = document.querySelector("input[type='tel']");
+let im = new Inputmask("+7-(999) 999-99-99");
 
 im.mask(selector);
 
-new JustValidate('.form', {
+new window.JustValidate('.form', {
   colorWrong: '#FF5C00',
-  errorFieldCssClass: 'is-invalid',
 
   rules: {
     name: {
@@ -68,8 +67,8 @@ new JustValidate('.form', {
     phone: {
       required: true,
       function: (name, value) => {
-        const tel = selector.inputmusk.unmaskedvalue()
-        return Number(tel) && phone.length === 10;
+        const tel = selector.inputmusk.unmaskedvalue();
+        return Number(tel) && tel.length === 10;
       }
     },
     email: {
@@ -79,9 +78,7 @@ new JustValidate('.form', {
   },
   messages: {
     name: "Вы не ввели имя",
-    email: {
-      required: "Вы не ввели e-mail"
-    },
+    email: "Вы не ввели e-mail",
     phone: {
       required: "Вы не ввели телефон",
       function: "Не достаточное количество символов"

@@ -23,6 +23,7 @@ h1 {
 
 .custom-elements__container {
   display: flex;
+  align-items: flex-start;
   min-width: 2678px;
 }
 
@@ -256,7 +257,7 @@ h1 {
 
   margin-right: 57px;
   width: 380px;
-  padding: 38px 30px;
+  padding: 39px 30px;
   border-radius: 10px;
 
   background-color: rgba(40, 40, 40, 0.4);
@@ -264,7 +265,11 @@ h1 {
   font-family: 'Roboto';
 }
 
-.form__container input {
+.input__container {
+  position: relative;
+}
+
+.input__container input {
   padding: 20px 20px;
   width: 89.3%;
   margin-bottom: 31px;
@@ -272,6 +277,19 @@ h1 {
   border: 1px solid #FF5C00;
   border-radius: 10px;
   font-size: 16px;
+}
+
+.input__container:last-child input {
+  margin-bottom: 30px;
+}
+
+.js-validate-error-label {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+
+  font-size: 13.5px;
 }
 
 .form__btn {
