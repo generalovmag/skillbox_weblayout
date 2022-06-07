@@ -67,7 +67,7 @@ new window.JustValidate('.form', {
     phone: {
       required: true,
       function: (name, value) => {
-        const tel = selector.inputmusk.unmaskedvalue();
+        const tel = selector.inputmask.unmaskedvalue();
         return Number(tel) && tel.length === 10;
       }
     },
