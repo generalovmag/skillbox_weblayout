@@ -30,10 +30,6 @@ button {
   display: flex;
 }
 
-.container {
-  max-width: 1110px;
-}
-
 .header {
   padding-top: 25px;
   padding-bottom: 24px;
@@ -41,8 +37,17 @@ button {
   background-color: #3F2AFF;
 }
 
-.hedaer__logo picture img{
+.hedaer__logo-link picture img{
   padding-top: 3px;
+}
+
+.nav__burger .nav__list {
+  display: none;
+}
+
+
+.nav__list {
+  justify-content: end;
 }
 
 .nav__item:not(:last-child) {
@@ -53,19 +58,31 @@ button {
   color: #fff;
 }
 
+.header__burder {
+  display: none;
+}
+
 .hero {
-  background-image: url('/img/hero-background.jpeg');
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
 
   color: #fff;
 }
 
 .hero__text {
-  padding-top: 11.6%;
+  padding-top: 11.3%;
+}
+
+.hero__img--container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-top: 13px;
+  padding-bottom: 5px;
 }
 
 .hero__img {
-  padding-top: 15px;
-  padding-bottom: 5px;
+  max-width: 100%;
 }
 
 .hero__header {
@@ -79,7 +96,7 @@ button {
 }
 
 .hero__dscr {
-  margin-bottom: 13.5%;
+  margin-bottom: 14.2%;
 }
 
 .hero__btn {
@@ -90,8 +107,8 @@ button {
 }
 
 .advantages {
-  padding-top: 6%;
-  padding-bottom: 5.75%;
+  padding-top: 5%;
+  padding-bottom: 4.9%;
 
 }
 
@@ -108,13 +125,13 @@ button {
 }
 
 .advantages__header {
-  margin-bottom: 2%;
+  margin-bottom: 2.6%;
 
   width: 70%;
 
   font-size: 40px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 .advantages__dscr {
@@ -161,8 +178,8 @@ button {
 }
 
 .teachers {
-  padding-top: 5%;
-  padding-bottom: 5.7%;
+  padding-top: 4%;
+  padding-bottom: 4.5%;
 
   background-color: #212133;
 }
@@ -177,16 +194,15 @@ button {
 }
 
 .teacher__img {
-  margin-bottom: 7%;
+  margin-bottom: 9.5%;
 
   width: 100%;
 
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-radius: 20px 20px 0 0;
 }
 
 .teacher__name {
-  margin-bottom: 1.5%;
+  margin-bottom: 2.2%;
 
   color: #fff;
 
@@ -200,12 +216,12 @@ button {
 }
 
 .courses {
-  padding-top: 5.3%;
-  padding-bottom: 5.9%;
+  padding-top: 4.1%;
+  padding-bottom: 5%;
 }
 
 .courses__header {
-  margin-bottom: 7%;
+  margin-bottom: 9%;
 
   color: #212133;
 
@@ -224,36 +240,31 @@ button {
   border-radius: 25px;
   
   background-color: #EDF0F9;
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .courses .container .row:nth-child(2) {
-  margin-bottom: 2.5%;
+  margin-bottom: 2.9%;
 }
 
-.course-1 {
-  background-image: url('/img/courses-1.jpeg');
+.course__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 0;
+  object-fit: contain;
 }
 
-.course-2 {
-  background-image: url('/img/courses-2.jpeg');
-}
-
-.course-3 {
-  background-image: url('/img/courses-3.jpeg');
-}
-
-.course-4 {
-  background-image: url('/img/courses-4.jpeg');
+.course__img img {
+  width: 100%;
 }
 
 .course__time {
   content: '';
   position: absolute;
   top: 11px;
-  right: 6px;
+  right: 4px;
 
   color: #fff;
 
@@ -282,7 +293,7 @@ button {
 
 .course__btn {
   align-items: flex-end;
-  padding: 1em 3em;
+  padding: 0.9em 3em;
 
   border-radius: 20px;
   background-color: #3F2AFF;
@@ -291,17 +302,17 @@ button {
 }
 
 .footer {
-  padding: 2.3% 0 1.65%;
+  padding: 1.9% 0 1.4%;
 
   background-color: #2E2B44;
 }
 
 .footer__social-contact:not(:last-child) {
-  margin-right: 3%;
+  margin-right: 42%;
 }
 
 .footer__reg {
-  padding: 2px;
+  padding: 1px;
 }
 
 .footer__text {
