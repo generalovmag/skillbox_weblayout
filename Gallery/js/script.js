@@ -9,6 +9,8 @@ document.querySelectorAll(".art-styles__list").forEach(dropdown => {
   });
 })
 
+
+
 // Choises
 
 const gallerySelect = () => {
@@ -33,6 +35,60 @@ const swiper = new Swiper('.gallery__slider', {
   },
 });
 
+// Popup Gallery... не работает
+
+const popUp = document.querySelector('.popup');
+const popUpItem = document.querySelector('.popup__item-2');
+const openPopUp = document.querySelector('.gallery__popup-link');
+const closePopUp = document.querySelector('.popup__item-close');
+
+openPopUp.addEventListener('click', function (evt){
+  evt.preventDefault();
+  popUp.classList.add('popup-active');
+  popUpItem.classList.add('popup-item-active');
+
+});
+
+closePopUp.addEventListener('click', () => {
+  popUp.classList.remove('popup-active');
+  popUpItem.classList.remove('popup-active');
+});
+
+
+
+// Переменные слайдера "Галерея"
+let tabsBtn = document.querySelectorAll('.catalog__right-link');
+let tabsItem = document.querySelectorAll('.catalog__content');
+
+
+tabsBtn.forEach(function(element) {
+  element.addEventListener('click', 
+    function(e) {
+      const path = e.currentTarget.dataset.path;
+
+      tabsBtn.forEach(function(btn) {
+        btn.classList.remove('catalog__right-link-active')
+      });
+      e.currentTarget.classList.add('catalog__right-link-active');
+
+      tabsItem.forEach(
+        function(element) {
+          element.classList.remove('catalog__content-active');
+      });
+      document.querySelector('.catalog__content[data-target=' + path +']').classList.add('catalog__content-active');
+    });
+});
+
+// Swiper Hero
+
+const swiperHero = new Swiper('.hero__swiper-container', {
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+});
+
 // Swiper Events
 
 const swiperEvents = new Swiper('.events__slider', {
@@ -41,8 +97,7 @@ const swiperEvents = new Swiper('.events__slider', {
 
   // навигация
   navigation: {
-    nextEl: '.events__slider .swiper-button-next',
-    prevEl: '.events__slider .swiper-button-prev',
+    nextEl: '.events .container .swiper-button-next',
   },
 });
 

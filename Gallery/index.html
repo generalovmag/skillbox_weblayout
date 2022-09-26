@@ -154,12 +154,136 @@
 
   <section class="hero">
     <div class="container flex">
+      <!-- контейнер слайдера -->
+      <div class="swiper-container hero__swiper-container">
+        <!-- враппер -->
+        <div class="swiper-wrapper hero__swiper-items">
+        <!-- слайды -->
+          <div class="swiper-slide hero__swiper-item">
+          </div>
+          <div class="swiper-slide hero__swiper-item">
+          </div>
+          <div class="swiper-slide hero__swiper-item">
+          </div>
+        </div>
+      </div>
       <div class="hero__text">
         <h1 class="h1-disable">Blanchard художественная галерея</h1>
         <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
         <p class="hero__dscr">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений</p>
         <button class="hero__btn">Подписаться на рассылку</button>
       </div>
+        
+    </div>
+  </section>
+
+  <section class="popup">
+    <div class="popup__container">
+      <div class="popup__1 popup__item" id="popup__1">
+      <img src="/img/1920px/gallery-1.jpeg" alt="" class="popup__img">
+      <div class="popup__text">
+        <h3 class="popup__title">
+
+        </h3>
+        <p class="popup__img-name">
+
+        </p>
+        <span class="popup__date">
+
+        </span>
+        <p class="popup__discr">
+
+        </p>
+      </div>
+    </div>
+    <div class="popup__item-2 popup__item" id="popup__2">
+      <img src="/img/1920px/gallery-2.jpeg" alt="" class="popup__img">
+      <div class="popup__text">
+        <h3 class="popup__title">
+          Казимир Малевич
+        </h3>
+        <p class="popup__img-name">
+          «Женщина с граблями»
+        </p>
+        <span class="popup__date">
+          1931–1932
+        </span>
+        <p class="popup__discr">
+          Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.
+        </p>
+      </div>
+      <span class="popup__item-close">
+
+      </span>
+    </div>
+    <div class="popup__3 popup__item" id="popup__3">
+      <img src="/img/1920px/gallery-3.jpeg" alt="" class="popup__img">
+<div class="popup__text">
+  <h3 class="popup__title">
+
+  </h3>
+  <p class="popup__img-name">
+
+  </p>
+  <span class="popup__date">
+
+  </span>
+  <p class="popup__discr">
+
+  </p>
+</div>
+    </div>
+    <div class="popup__4 popup__item" id="popup__4">
+      <img src="/img/1920px/gallery-4.jpeg" alt="" class="popup__img">
+<div class="popup__text">
+  <h3 class="popup__title">
+
+  </h3>
+  <p class="popup__img-name">
+
+  </p>
+  <span class="popup__date">
+
+  </span>
+  <p class="popup__discr">
+
+  </p>
+</div>
+    </div>
+    <div class="popup__5 popup__item" id="popup__5">
+      <img src="/img/1920px/gallery-5.jpeg" alt="" class="popup__img">
+<div class="popup__text">
+  <h3 class="popup__title">
+
+  </h3>
+  <p class="popup__img-name">
+
+  </p>
+  <span class="popup__date">
+
+  </span>
+  <p class="popup__discr">
+
+  </p>
+</div>
+    </div>
+    <div class="popup__6 popup__item" id="popup__6">
+      <img src="/img/1920px/gallery-6.jpeg" alt="" class="popup__img">
+      <div class="popup__text">
+        <h3 class="popup__title">
+
+        </h3>
+        <p class="popup__img-name">
+
+        </p>
+        <span class="popup__date">
+
+        </span>
+        <p class="popup__discr">
+
+        </p>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -235,16 +359,45 @@
             <!-- враппер -->
             <div class="swiper-wrapper">
               <!-- слайды -->
-              <div class="swiper-slide gallery__slide-img flex">
-                <img src="/img/1920px/gallery-1.jpeg" alt="картина">
-                <img src="/img/1920px/gallery-2.jpeg" alt="картина">
-                <img src="/img/1920px/gallery-3.jpeg" alt="картина">
+              <div class="swiper-slide gallery__slide-img-items flex">
+                <div class="gallery__slide-img-item">
+                  <a href="#gallery" class="gallery__popup-link">
+                    <img class="gallery__slide-img-item-content" src="/img/1920px/gallery-1.jpeg" alt="картина">
+                  </a>
+                </div>
+                <div class="gallery__slide-img-item">
+                  <a href="#gallery" class="gallery__popup-link">
+
+                    <img class="gallery__slide-img-item-content" src="/img/1920px/gallery-2.jpeg" alt="картина">
+                  </a>
+                </div>
+                <div class="gallery__slide-img-item">
+                  <a href="#gallery" class="gallery__popup-link">
+
+                    <img class="gallery__slide-img-item-content" src="/img/1920px/gallery-3.jpeg" alt="картина">
+                  </a>
+                </div>
               </div>
               <div class="swiper-slide">
-                <div class="swiper-slide gallery__slide-img flex">
-                  <img src="/img/1920px/gallery-4.jpeg" alt="картина">
-                  <img src="/img/1920px/gallery-5.jpeg" alt="картина">
-                  <img src="/img/1920px/gallery-6.jpeg" alt="картина">
+                <div class="swiper-slide gallery__slide-img-items flex">
+                  <div class="gallery__slide-img-item">
+                    <a href="#gallery" class="gallery__popup-link">
+
+                      <img class="gallery__slide-img-item-content" src="/img/1920px/gallery-4.jpeg" alt="картина">
+                    </a>
+                  </div>
+                  <div class="gallery__slide-img-item">
+                    <a href="#gallery" class="gallery__popup-link">
+
+                      <img class="gallery__slide-img-item-content" src="/img/1920px/gallery-5.jpeg" alt="картина">
+                    </a>
+                  </div>
+                  <div class="gallery__slide-img-item">
+                    <a href="#gallery" class="gallery__popup-link">
+
+                      <img class="gallery__slide-img-item-content" src="/img/1920px/gallery-6.jpeg" alt="картина">
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -258,7 +411,171 @@
         <p class="catalog__discr">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
         <div class="catalog__section-container flex">
           <div class="catalog__left">
+            
             <div class="catalog__content" data-target="one">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/Бенедетто-ди-Биндо.jpg" alt="Бенедетто ди Биндо">
+              </picture>
+              <h3 class="catalog__content-title">Бенедетто ди Биндо</h3>
+              <p class="catalog__content-date">1380—1385 года - 1417 год</p>
+              <p class="catalog__content-discr">
+                Бенедетто ди Биндо (Benedetto di Bindo) родился 1380—1385 годах в Кастильоне ди Вальдорча близ Сиены, умер 1417 году в Перудже. Сиенская школа. Обучение он прошёл у Таддео ди Бартоло, крупного сиенского мастера поздней готики, в боттеге которого Бенедетто трудился. Первое документальное упоминание имени художника датируется 20 ноября 1409 года, когда он получил заказ на роспись двух деревянных статуй святых покровителей Сиены — св. Виктора и св. Савиния, выполненных скульптором Франческо ди Вальдамбрино для Сиенского собора. В 1411—1412 годах Бенедетто работал над циклом фресок, посвящённых житию Марии в сакристии этого же собора.
+              </p>
+            </div>
+            <div class="catalog__content" data-target="two">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="three">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="four">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="five">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="six">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="seven">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="eight">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="nine">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="ten">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="eleven">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content catalog__content-active" data-target="twelve">
               <picture>
                 <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
                 <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
@@ -266,9 +583,204 @@
                 <img class="catalog__content-img" src="/img/1920px/catalog-Доменико_Гирландайо.jpeg" alt="Доменико Гирландайо">
               </picture>
               <h3 class="catalog__content-title">Доменико Гирландайо</h3>
-              <p class="catalog__content-date">2 июня 1448–11 января 1494</p>
+              <p class="catalog__content-date">2 июня 1448 – 11 января 1494</p>
               <p class="catalog__content-discr">
                 Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+              </p>
+            </div>
+            <div class="catalog__content" data-target="thirteen">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="fourteen">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="fifteen">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="sixteen">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="seventeen">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="eighteen">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="nineteen">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="twenty">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="twenty-one">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="one">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="twenty-two">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="twenty-three">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
+              </p>
+            </div>
+            <div class="catalog__content" data-target="twenty-four">
+              <picture>
+                <source class="catalog__content-img" media="(max-width: 1420px)" srcset="/img/1024px/catalog-Доменико_Гирландайо.jpeg">
+                <source class="catalog__content-img" media="(max-width: 768px)" srcset="/img/768px/catalog-Доменико_Гирландайо.jpg">
+                <source class="catalog__content-img" media="(max-width: 400px)" srcset="/img/320px/catalog-Доменико_Гирландайо.jpg">
+                <img class="catalog__content-img" src="/img/1920px/catalog-no_img.png" alt="Тут будет изображение художника">
+              </picture>
+              <h3 class="catalog__content-title">Что мы о нём знаем?</h3>
+              <p class="catalog__content-date">Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <p class="catalog__content-discr">
+                <a href="#gallery" class="catalog__content-link">
+                  В галерею
+                </a>
               </p>
             </div>
           </div>
@@ -284,30 +796,30 @@
                 </button>
               </h3>
               <div class="catalog__right-content-name flex">
-                <a href="#" class="catalog__right-link" data-path="two">Бенедетто ди Биндо</a>
-                <a href="#" class="catalog__right-link" data-path="two">Бергоньоне, Амброджо</a>
-                <a href="#" class="catalog__right-link" data-path="two">Биссоло, Франческо</a>
-                <a href="#" class="catalog__right-link" data-path="two">Больтраффио, Джованни</a>
-                <a href="#" class="catalog__right-link" data-path="two">Бонсиньори, Франческо</a>
-                <a href="#" class="catalog__right-link" data-path="two">Боттичини, Рафаэлло</a>
-                <a href="#" class="catalog__right-link" data-path="two">Брамантино</a>
-                <a href="#" class="catalog__right-link" data-path="two">Бреа, Людовико</a>
-                <a href="#" class="catalog__right-link" data-path="two">Бьяджо д’Антонио Туччи</a>
-                <a href="#" class="catalog__right-link" data-path="two">Веккьетта</a>
-                <a href="#" class="catalog__right-link" data-path="two">Андреа Верроккьо</a>
-                <a href="#" class="catalog__right-link" data-path="one">Доменико Гирландайо</a>
-                <a href="#" class="catalog__right-link" data-path="two">Беноццо Гоццоли</a>
-                <a href="#" class="catalog__right-link" data-path="two">Граначчи, Франческо</a>
-                <a href="#" class="catalog__right-link" data-path="two">Грегорио ди Чекко</a>
-                <a href="#" class="catalog__right-link" data-path="two">Джованни да Удине</a>
-                <a href="#" class="catalog__right-link" data-path="two">Джованни ди Паоло</a>
-                <a href="#" class="catalog__right-link" data-path="two">Джорджоне</a>
-                <a href="#" class="catalog__right-link" data-path="two">Парентино, Бернардо</a>
-                <a href="#" class="catalog__right-link" data-path="two">Пезеллино</a>
-                <a href="#" class="catalog__right-link" data-path="two">Пьетро Перуджино</a>
-                <a href="#" class="catalog__right-link" data-path="two">Перуцци, Бальдассаре</a>
-                <a href="#" class="catalog__right-link" data-path="two">Пизанелло</a>
-                <a href="#" class="catalog__right-link" data-path="two">Пинтуриккьо</a>
+                <a href="#catalog" class="catalog__right-link" data-path="one">Бенедетто ди Биндо</a>
+                <a href="#catalog" class="catalog__right-link" data-path="two">Бергоньоне, Амброджо</a>
+                <a href="#catalog" class="catalog__right-link" data-path="three">Биссоло, Франческо</a>
+                <a href="#catalog" class="catalog__right-link" data-path="four">Больтраффио, Джованни</a>
+                <a href="#catalog" class="catalog__right-link" data-path="five">Бонсиньори, Франческо</a>
+                <a href="#catalog" class="catalog__right-link" data-path="six">Боттичини, Рафаэлло</a>
+                <a href="#catalog" class="catalog__right-link" data-path="seven">Брамантино</a>
+                <a href="#catalog" class="catalog__right-link" data-path="eight">Бреа, Людовико</a>
+                <a href="#catalog" class="catalog__right-link" data-path="nine">Бьяджо д’Антонио Туччи</a>
+                <a href="#catalog" class="catalog__right-link" data-path="ten">Веккьетта</a>
+                <a href="#catalog" class="catalog__right-link" data-path="eleven">Андреа Верроккьо</a>
+                <a href="#catalog" class="catalog__right-link" data-path="twelve">Доменико Гирландайо</a>
+                <a href="#catalog" class="catalog__right-link" data-path="thirteen">Беноццо Гоццоли</a>
+                <a href="#catalog" class="catalog__right-link" data-path="fourteen">Граначчи, Франческо</a>
+                <a href="#catalog" class="catalog__right-link" data-path="fifteen">Грегорио ди Чекко</a>
+                <a href="#catalog" class="catalog__right-link" data-path="sixteen">Джованни да Удине</a>
+                <a href="#catalog" class="catalog__right-link" data-path="seventeen">Джованни ди Паоло</a>
+                <a href="#catalog" class="catalog__right-link" data-path="eighteen">Джорджоне</a>
+                <a href="#catalog" class="catalog__right-link" data-path="nineteen">Парентино, Бернардо</a>
+                <a href="#catalog" class="catalog__right-link" data-path="twenty">Пезеллино</a>
+                <a href="#catalog" class="catalog__right-link" data-path="twenty-one">Пьетро Перуджино</a>
+                <a href="#catalog" class="catalog__right-link" data-path="twenty-two">Перуцци, Бальдассаре</a>
+                <a href="#catalog" class="catalog__right-link" data-path="twenty-three">Пизанелло</a>
+                <a href="#catalog" class="catalog__right-link" data-path="twenty-four">Пинтуриккьо</a>
               </div>
               <h3 class="catalog__right-title">
                 <button class="catalog__akkordion-btn">
@@ -332,7 +844,7 @@
                   <p class="catalog__right-content-name-right-discr">
                     А в галерее вы всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#" class="catalog__right-content-name-right-link">В галерею</a>
+                  <a href="#gallery" class="catalog__right-content-name-right-link">В галерею</a>
                 </div>
               </div>
               <h3 class="catalog__right-title">
@@ -358,7 +870,7 @@
                   <p class="catalog__right-content-name-right-discr">
                     А в галерее вы всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#" class="catalog__right-content-name-right-link">В галерею</a>
+                  <a href="#gallery" class="catalog__right-content-name-right-link">В галерею</a>
                 </div>
               </div>
               <h3 class="catalog__right-title">
@@ -384,7 +896,7 @@
                   <p class="catalog__right-content-name-right-discr">
                     А в галерее вы всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#" class="catalog__right-content-name-right-link">В галерею</a>
+                  <a href="#gallery" class="catalog__right-content-name-right-link">В галерею</a>
                 </div>
               </div>
               <h3 class="catalog__right-title">
@@ -410,7 +922,7 @@
                   <p class="catalog__right-content-name-right-discr">
                     А в галерее вы всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#" class="catalog__right-content-name-right-link">В галерею</a>
+                  <a href="#gallery" class="catalog__right-content-name-right-link">В галерею</a>
                 </div>
               </div>
               <h3 class="catalog__right-title">
@@ -436,12 +948,12 @@
                   <p class="catalog__right-content-name-right-discr">
                     А в галерее вы всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#" class="catalog__right-content-name-right-link">В галерею</a>
+                  <a href="#gallery" class="catalog__right-content-name-right-link">В галерею</a>
                 </div>
               </div>
               <h3 class="catalog__right-title">
                 <button class="catalog__akkordion-btn">
-                  <span>C 2000 г</span>
+                  <span>C 2000 г</span>
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                     <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
@@ -462,7 +974,7 @@
                   <p class="catalog__right-content-name-right-discr">
                     А в галерее вы всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#" class="catalog__right-content-name-right-link">В галерею</a>
+                  <a href="#gallery" class="catalog__right-content-name-right-link">В галерею</a>
                 </div>
               </div>
             </div>
@@ -549,15 +1061,14 @@
             </div>
             <!-- кнопки для навигации -->
             <!-- <div class="events__swiper-button-prev swiper-button-prev"></div> -->
-            <div class="events__swiper-button-next swiper-button-next">
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" fill="#ECECEC"/>
-                <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" stroke="black"/>
-                <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"/>
-              </svg>
-            </div>
+            
           </div>
-      
+          <div class="events__swiper-button-next swiper-button-next">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" fill="#ECECEC"/>
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"/>
+            </svg>
+          </div>
         </div>
       </section>
 
